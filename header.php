@@ -11,14 +11,16 @@
     </head>
 <body>
     <header>
-        <h1>WESTGUIDE</h1>
+        <a href="index.php">
+            <h1>WESTGUIDE</h1> <!--- Byttes ut med bilde av logo når vi har det --->
+        </a>
     </header>
     
     <nav>
         <ul>
-            <li><a href="#motivation">KULTUR</a></li>
-            <li><a href="#relation">AKTIVITET</a></li>
-            <li><a href="#livsstil">MAT</a></li>
-            <li><a href="#hälsa">SKOLE</a></li> 
+            <li><a href="kultur.php">KULTUR</a></li>
+            <li><a href="aktivitet.php">AKTIVITET</a></li>
+            <li><a href="mat.php">MAT</a></li>
+            <li><a href="http://www.westerdals.no" target="_blank">SKOLE</a></li> 
         </ul>
     </nav>

@@ -1,6 +1,6 @@
-<a href="url">HARVARD UNIVERSITY / THE BEST SCHOOL / FEBRUARY 21, 2017</a>
+<a href="http://www.harvard.edu" target="_blank">HARVARD UNIVERSITY / THE BEST SCHOOL / FEBRUARY 21, 2017</a>
 <h2>ANDRE ARTIKKEL</h2>
-BY <a class="av" href="url">KENNETH SACCKY</a>
+BY <a class="av" href="http://www.facebook.com/saccky?fref=ts" target="_blank">KENNETH SACCKY</a>
 <p>
     <img class="me" width="200"  src="pictures/Einstein.jpg">
     Cable bills in America have been on the rise, with the average household spending $64.41 a month or about $768 a year. The thing is, there are many cheaper alternatives available these days that will provide you with enough entertainment options for the entire family. You can try a third-party service such as Netflix, which costs $9.99 a month, Amazon Prime at $99 a year or Hulu Plus, which costs $7.99 a month.
