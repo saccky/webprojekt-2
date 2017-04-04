@@ -5,53 +5,53 @@
 <h1>MAT</h1>
 
 <!--- Script start --->
+<!--- evt se https://www.w3schools.com/w3css/w3css_slideshow.asp --->
 <div id="scriptArea">
+    
+    <!--- kode fra W3 (manuell slideshow(se link)+timeout for automastisk effekt) start --->
+    <div id="W3SlideContainer">
+        <img class="W3Slides" src="pictures/food-ex1.jpg" style="height: 200px">
+        <img class="W3Slides" src="pictures/food-ex2.jpg" style="height: 200px">
+        <img class="W3Slides" src="pictures/westguide-logo.png" style="height: 200px">
+    </div>
+    
     <script>
-        <!--- Ideen bak image plus/min og switch er at man kan ha flere bilder, knappenes funksjoner vil vise bilde for nåværende var j, og øke eller minke j etter hvilken knapp som blir trykket på. Virker ikke helt 100%, det er noe merkelig jeg ikke kan sette fingeren på. --->
-        var j = 0;
-        function imagePlus()
+        var sIndex = 1;
+        showDivs(sIndex);
+        
+        function plusDivs(n)
         {
-            j++;
-            foodImage(j);
+            showDivs(sIndex += n);
         }
-        function imageMin()
+        function showDivs(n)
         {
-            j--;
-            foodImage(j);
-        }
-        function foodImage(i) 
-        {
-            var pic;
-            switch (i)
+            var i;
+            var x = document.getElementsByClassName("W3Slides");
+            if(n > x.length) 
             {
-                case 1:
-                pic = "pictures/food-ex1.jpg";     
-                break;
-                case 2:
-                pic = "pictures/food-ex2.jpg";
-                break;
-                default:
-                pic = "pictures/berg.jpg";
+                sIndex = 1;
             }
-                    
-            document.getElementById('myImage').src = pic;
+            if(n < 1)
+            {
+                sIndex = x.length;    
+            }
+            for(i = 0; i < x.length; i++)
+            {
+                x[i].style.display = "none";
+            }
+            x[sIndex-1].style.display = "block";
+            //setTimeout(plusDivs, 2000);
         }
     </script>
-                    
-    <div id="scriptPicture">
-        <img id="myImage" src="pictures/Einstein.jpg" width="400px" height="300px">
-    </div>
+    <!--- w3 slutt --->
                         
     <p>
-        <button id="ImageButtonPrev" type="button" onclick="imageMin()"> Prev </button>
+        <button id="ImageButtonPrev" type="button" onclick="plusDivs(-1)"> Prev </button>
     </p>                        
     <p>
-        <button id="ImageButtonNext" type="button" onclick="imagePlus()"> Next </button>
+        <button id="ImageButtonNext" type="button" onclick="plusDivs(1)"> Next </button>
     </p>
-    <p>
-        <!--- NB: for testing --->
-        <button id="ImageButtonReset" type="button" onclick="foodImage(1)"> Reset    </button>
-    </p>
+    
 </div>
 <!--- Script slutt --->
 

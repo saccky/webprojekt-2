@@ -1,4 +1,5 @@
-body{
+body
+{
     background-color: white;
     font-family: Arial, Verdana, Comic Sans;
     text-align: left;
@@ -8,16 +9,25 @@ body{
     padding: 20px;
     margin: 0 200px;
 }
-
-ul {
+#wrapper 
+{  
+    width:980px;  
+    text-align:left;   
+    margin-left:auto;  
+    margin-right:auto;  
+    background-color: #FFFFFF; 
+}
+ul 
+{
     list-style-type: none;
     margin: 0px;
     padding: 10px;
     overflow: hidden;
     background-color: #333;
-    }
+}
 
-li{
+li
+{
    float: left;
 }
 

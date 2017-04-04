@@ -3,12 +3,11 @@
 ?>
     
     <br>
-    <img src="pictures/berg.jpg" width="1010" height="500">
+    <img src="pictures/berg.jpg" width="100%">
     <br>
 
     <hr>
     <br>
-
     <div class="artikel1">
         <article>
             
