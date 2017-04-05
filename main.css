@@ -56,12 +56,6 @@ ul li:hover ul {
 
 ul li ul {
   position: absolute;
-  width: 100px;
-  display: none;
-}
-
-ul li ul {
-  position: absolute;
   width: 95px;
   display: none;
 }
