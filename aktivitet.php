@@ -5,10 +5,6 @@
 <h1>AKTIVITET</h1>
 test
 
-<?php
-    require 'footer.php'
-?>
-
 <div id="googleMap" style="width:400px;height:400px;">
     <script>
         function myMap() {
@@ -26,3 +22,7 @@ var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
 
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD9tygoWPfsio74yQq3wXl6wxU23ERPlgA&callback=myMap"></script>
 </div>
+
+<?php
+    require 'footer.php'
+?>
