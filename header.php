@@ -31,6 +31,6 @@
                 </li>
                 <li><a href="aktivitet.php">AKTIVITET</a></li>
                 <li><a href="mat.php">MAT</a></li>
-                <li><a href="http://www.westerdals.no" target="_blank">SKOLE</a></li> 
+                <li><a href="skole.php">SKOLE</a></li> 
             </ul>
         </nav>
