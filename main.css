@@ -56,28 +56,28 @@ ul li:hover ul {
 
 ul li ul {
   position: absolute;
-  width: 50px;
+  width: 100px;
   display: none;
 }
 
 ul li ul {
   position: absolute;
-  width: 90px;
+  width: 95px;
   display: none;
 }
 
 ul li ul li { 
-  display: block; 
+  display: block;
 }
-
-ul li ul li a {
-    display:block;
-} 
 
 ul li ul li:hover {
     text-decoration: underline;
     
 }
+
+ul li ul li a {
+    display:block;
+} 
 
 header{
    display: block;
