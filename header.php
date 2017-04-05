@@ -14,7 +14,7 @@
     <div id="wrapper">
         <header>
             <a href="index.php">
-                <img src="pictures/westguide-logo.png" height="150px">
+                <img src="westguide-logo.png" height="150px">
             </a>
         </header>
 
