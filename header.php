@@ -21,7 +21,14 @@
         <nav>
             <ul>
                 <li><a href="index.php">Forsiden</a></li>
-                <li><a href="kultur.php">KULTUR</a></li>
+                <li><a href="kultur.php">KULTUR</a>
+                    <ul>
+                        <li><a href="#">Kunst</a></li>
+                        <li><a href="#">Utstilling</a></li>
+                        <li><a href="#">Utstilling</a></li>
+                        <li><a href="#">Utstilling</a></li>
+                    </ul>
+                </li>
                 <li><a href="aktivitet.php">AKTIVITET</a></li>
                 <li><a href="mat.php">MAT</a></li>
                 <li><a href="http://www.westerdals.no" target="_blank">SKOLE</a></li> 

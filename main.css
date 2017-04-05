@@ -26,8 +26,7 @@ ul
     background-color: #333;
 }
 
-li
-{
+li{
    float: left;
 }
 
@@ -41,6 +40,43 @@ li a{
 
 li a:hover{
     background-color: #111;
+}
+
+ul li {
+    display: inline-block;
+}
+
+ul li:hover {
+    background: #333;
+}
+
+ul li:hover ul {
+    display: block;
+}
+
+ul li ul {
+  position: absolute;
+  width: 50px;
+  display: none;
+}
+
+ul li ul {
+  position: absolute;
+  width: 90px;
+  display: none;
+}
+
+ul li ul li { 
+  display: block; 
+}
+
+ul li ul li a {
+    display:block;
+} 
+
+ul li ul li:hover {
+    text-decoration: underline;
+    
 }
 
 header{
