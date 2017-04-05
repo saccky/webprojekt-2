@@ -1,5 +1,6 @@
-<?php 
-    require 'header.php'
+<?php   
+    require 'connection.php';
+    require 'header.php';
 ?>
     
     <br>
@@ -10,6 +11,14 @@
     <br>
     <div class="artikel1">
         <article>
+            
+            <?php foreach ($articles as $event) 
+                {  
+                    require 'article.php';
+                ?>
+                <hr>
+                <br>
+            <?php  } ?>
             
             <!---Artikkel 1 start --->
             <?php 
