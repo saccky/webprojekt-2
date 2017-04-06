@@ -15,7 +15,7 @@
 <body>
     <div id="wrapper">
         <header>
-            <a href="index.php"> <img id="logo" src="logo-klipt.png" width="300px"> </a>
+
             <a href="index.php">
                 <img id="logo" src="logo-klipt.png" width="400px">
             </a>
