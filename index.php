@@ -2,7 +2,6 @@
     require 'connection.php';
     require 'header.php';
 ?>
-<<<<<<< HEAD
     <br> <img src="westerdals_bygning_01-1-ekempel.jpg" width="100%">
     <br>
     <hr>
@@ -33,7 +32,6 @@
     <?php 
         require 'footer.php' 
     ?>
-=======
 
 <br>
 <img src="westerdals_bygning_01-1-ekempel.jpg" width="100%">
@@ -87,4 +85,3 @@
 <?php 
         require 'footer.php' 
     ?>
->>>>>>> origin/master
