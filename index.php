@@ -11,7 +11,6 @@
     <br>
     <div class="artikel1">
         <article>
-            heihei
             
             <!--- Printer alle artikler --->
             <?php foreach ($articles as $event) 
