@@ -4,7 +4,7 @@
 ?>
     
     <br>
-    <img src="berg.jpg" width="100%">
+    <img src="westerdals_bygning_01-1-ekempel.jpg" width="100%">
     <br>
 
     <hr>

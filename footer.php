@@ -1,6 +1,6 @@
             <div class="mainFooter">
                 <footer>
-                    Skapad av Kenneth Saccky
+                    Laget av Kenneth Saccky, Linda Helene B. Nordråk
                 </footer>
             </div>
 
