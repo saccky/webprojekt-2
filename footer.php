@@ -1,6 +1,6 @@
             <div class="mainFooter">
                 <footer>
-                    Laget av Kenneth Saccky, Linda Helene B. Nordråk
+                     ©2017 Laget av Kenneth Saccky, Linda Helene B. Nordråk, 
                 </footer>
             </div>
 
