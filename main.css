@@ -20,7 +20,7 @@ body
 
 
 #logo {
-    left: 300px;
+    left: 280px;
     position: relative;
     
 }
@@ -127,7 +127,7 @@ hr{
 }
 .mainFooter{
     margin-top: 100px;
-    background-color: black;
+    background-color: grey;
     color: white;
 }
 footer{
