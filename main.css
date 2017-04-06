@@ -1,5 +1,4 @@
-body
-{
+body {
     background-color: white;
     font-family: Arial, Verdana, Comic Sans;
     text-align: left;
@@ -9,26 +8,21 @@ body
     padding: 20px;
     margin: 0 200px;
 }
-#wrapper 
-{  
-    width:980px;  
-    text-align:left;   
-    margin-left:auto;  
-    margin-right:auto;  
-    background-color: #FFFFFF; 
-}
 
+#wrapper {
+    width: 980px;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #FFFFFF;
+}
 
 #logo {
     left: 300px;
     position: relative;
-    
 }
 
-
-
-ul 
-{
+ul {
     list-style-type: none;
     margin: 0px;
     padding: 10px;
@@ -36,11 +30,11 @@ ul
     background-color: gray;
 }
 
-li{
-   float: left;
+li {
+    float: left;
 }
 
-li a{
+li a {
     display: block;
     color: white;
     text-align: center;
@@ -48,7 +42,7 @@ li a{
     text-decoration: none;
 }
 
-li a:hover{
+li a:hover {
     background-color: #111;
 }
 
@@ -65,31 +59,30 @@ ul li:hover ul {
 }
 
 ul li ul {
-  position: absolute;
-  width: 95px;
-  display: none;
+    position: absolute;
+    width: 95px;
+    display: none;
 }
 
-ul li ul li { 
-  display: block;
+ul li ul li {
+    display: block;
 }
 
 ul li ul li:hover {
     text-decoration: underline;
-    
 }
 
 ul li ul li a {
-    display:block;
-} 
+    display: block;
+}
 
-header{
+header {
     display: block;
     background-color: white;
     color: white;
-    padding:20px;
-    
+    padding: 20px;
 }
+
 
 /*.sideContent{
     float: right;
@@ -97,40 +90,47 @@ header{
     width: 30%;
         
 }*/
-.mainContent{
 
+.mainContent {
     margin: 0 100px;
     width: 30%;
-    text-align:left;
+    text-align: left;
     display: inline-block;
-    padding: 100px ;
+    padding: 100px;
     align-content: center;
 }
-p{
+
+p {
     margin-bottom: 40px;
 }
-article a{
+
+article a {
     color: grey;
     text-decoration: none;
 }
-.av{
+
+.av {
     color: black;
     text-decoration: underline;
 }
-article{
+
+article {
     float: center;
 }
-hr{
+
+hr {
     margin 50px;
-    clear:both;
+    clear: both;
     border-color: #ff8c00;
 }
-.mainFooter{
+
+.mainFooter {
     margin-top: 100px;
     background-color: black;
     color: white;
 }
-footer{
+
+footer {
     float: center;
     margin: 0 20px;
     clear: both;
@@ -138,13 +138,13 @@ footer{
     right: 400px;
     text-align: center;
     padding: 30px;
-    
 }
-img{
+
+img {
     vertical-align: baseline;
 }
 
-.me{
+.me {
     float: left;
     margin: 0 10px 10px 0;
 }
