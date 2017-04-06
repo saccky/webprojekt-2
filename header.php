@@ -7,6 +7,7 @@
         <meta name="description" content="">
         <meta name="author" content="">
         <link rel="stylesheet" href="main.css"/>
+        <link rel="icon" href="logo1.png" />
         <title>WestGuide</title>
     </head>
 <body>
