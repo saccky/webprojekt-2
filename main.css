@@ -1,4 +1,5 @@
-body {
+body
+{
     background-color: white;
     font-family: Arial, Verdana, Comic Sans;
     text-align: left;
@@ -8,129 +9,139 @@ body {
     padding: 20px;
     margin: 0 200px;
 }
-
-#wrapper {
-    width: 980px;
-    text-align: left;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: #FFFFFF;
+#wrapper 
+{  
+    width:980px;  
+    text-align:left;
+    margin-left:auto;  
+    margin-right:auto;  
+    background-color: #FFFFFF; 
 }
-
-#logo {
-    left: 280px;
+#logo 
+{
+    left: 300px;
     position: relative;
 }
+header
+{
+    display: block;
+    background-color: white;
+    color: white;
+    padding:20px;   
+}
 
-ul {
+/* UL/LI */
+ul 
+{
     list-style-type: none;
     margin: 0px;
     padding: 10px;
     overflow: hidden;
     background-color: gray;
 }
-
-li {
-    float: left;
+li
+{
+   float: left;
 }
-
-li a {
+li a
+{
     display: block;
     color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
 }
-
-li a:hover {
+li a:hover
+{
     background-color: #111;
 }
 
-ul li {
+ul li 
+{
     display: inline-block;
 }
 
-ul li:hover {
+ul li:hover 
+{
     background: #333;
 }
 
-ul li:hover ul {
+ul li:hover ul 
+{
     display: block;
 }
 
-ul li ul {
-    position: absolute;
-    width: 95px;
-    display: none;
+ul li ul 
+{
+  position: absolute;
+  width: 95px;
+  display: none;
 }
 
-ul li ul li {
-    display: block;
+ul li ul li 
+{ 
+  display: block;
 }
 
-ul li ul li:hover {
-    text-decoration: underline;
+ul li ul li:hover 
+{
+    text-decoration: underline; 
 }
 
-ul li ul li a {
-    display: block;
-}
+ul li ul li a 
+{
+    display:block;
+} 
 
-header {
-    display: block;
-    background-color: white;
-    color: white;
-    padding: 20px;
-}
-
-
-/*.sideContent{
+/* Hovedinnhold */
+/*.sideContent
+{
     float: right;
     margin: 0 1.5%;
     width: 30%;
         
 }*/
+.mainContent
+{
 
-.mainContent {
     margin: 0 100px;
     width: 30%;
-    text-align: left;
+    text-align:left;
     display: inline-block;
-    padding: 100px;
+    padding: 100px ;
     align-content: center;
 }
-
-p {
+p
+{
     margin-bottom: 40px;
 }
-
-article a {
+article a
+{
     color: grey;
     text-decoration: none;
 }
-
-.av {
+.av
+{
     color: black;
     text-decoration: underline;
 }
-
-article {
+article
+{
     float: center;
 }
-
-hr {
+hr
+{
     margin 50px;
-    clear: both;
-    border-color: #ff8c00;
+    clear:both;
+    border-color: #ccc;
 }
-
-.mainFooter {
+.mainFooter{
     margin-top: 100px;
-    background-color: grey;
+    background-color: black;
     color: white;
 }
-
-footer {
+footer
+{
     float: center;
     margin: 0 20px;
     clear: both;
@@ -139,12 +150,52 @@ footer {
     text-align: center;
     padding: 30px;
 }
-
-img {
+#img
+{
     vertical-align: baseline;
 }
-
-.me {
+.me
+{
     float: left;
     margin: 0 10px 10px 0;
 }
+
+/* Slideshow */
+.SlideShow
+{
+    width: 100%;    
+    margin-left: auto;  
+    margin-right: auto;
+}
+.Slides
+{
+    height: 481px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#SlidesButtons /* Knapper vil ikke flytte på seg, mulig det er noe med koden over */
+{
+    margin-left: auto;
+    margin-right: auto;
+}
+#SlidesButtons *
+{
+    display: inline;
+    position: relative;
+}
+.SlidesBtnPrev
+{
+    margin-left: auto;
+    margin-right: auto;
+}
+/*
+.SlidesBtnNext
+{
+    width: 50px;
+    height: 100%;
+    top: 0px;
+    right: 0px;
+    background-color: grey;
+    text-align: center;
+}
+*/
