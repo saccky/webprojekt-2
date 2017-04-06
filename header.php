@@ -15,7 +15,7 @@
     <div id="wrapper">
         <header>
             <a href="index.php">
-                <img id="logo" src="westguide-logo-cut.png" width="300px">
+                <img id="logo" src="logo-klipt.png" width="300px">
             </a>
         </header>
 
