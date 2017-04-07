@@ -1,3 +1,8 @@
+<?php
+    /*Just for your server-side code*/
+    header('Content-Type: text/html; charset=ISO-8859-1');
+?>
+
 <!DOCTYPE html>
 <html>
 
@@ -34,5 +39,6 @@
                 <li><a href="aktivitet.php">AKTIVITET</a></li>
                 <li><a href="mat.php">MAT</a></li>
                 <li><a href="skole.php">SKOLE</a></li>
+                <li><a href="testside.php">TEST-SIDE</a></li>
             </ul>
         </nav>
