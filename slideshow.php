@@ -6,13 +6,21 @@
     
     <script>
         var sIndex = 1;
-        showDivs(sIndex);
+        carousel();
+        changeSlides(sIndex);
         
-        function plusDivs(n)
+        function carousel() 
         {
-            showDivs(sIndex += n);
+            showSlides(sIndex += 1);
+            setTimeout(carousel, 4000); //Endrer bilde hvert 4000 millisekund (3 sekunder)
         }
-        function showDivs(n)
+        
+        function changeSlides(n)
+        {
+            showSlides(sIndex += n);
+        }
+        
+        function showSlides(n)
         {
             var i;
             var x = document.getElementsByClassName("Slides");
@@ -29,13 +37,12 @@
                 x[i].style.display = "none";
             }
             x[sIndex-1].style.display = "block";
-            //setTimeout(plusDivs, 2000);
-        }
+        } 
     </script>
                         
 </div>
 <div id="SlidesButtons">
-        <button class="SlidesBtnPrev" type="button" onclick="plusDivs(-1)"> Prev </button>     
-        <button class="SlidesBtnNext" type="button" onclick="plusDivs(1)"> Next </button>
+        <button class="SlidesBtnPrev" type="button" onclick="changeSlides(-1)"> Prev </button>     
+        <button class="SlidesBtnNext" type="button" onclick="changeSlides(1)"> Next </button>
 </div>
 <!--- Script slutt --->
