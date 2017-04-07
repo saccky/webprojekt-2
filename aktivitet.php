@@ -17,6 +17,7 @@
         <!-- I TILFELLE: Lat&Lng fjerdingen '59.916238, 10.759765' -->
         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD9tygoWPfsio74yQq3wXl6wxU23ERPlgA&callback=myMap"></script>
     </div>
-    <?php
+<?php
+    require 'twitterfeed.php';
     require 'footer.php'
 ?>

@@ -1,5 +1,5 @@
 <?php   
-    require 'connection.php';
+    require 'connection-article.php';
     require 'header.php';
 ?>
     

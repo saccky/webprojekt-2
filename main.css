@@ -199,3 +199,15 @@ footer
     text-align: center;
 }
 */
+
+/* Event card */
+#EventWrapper
+{
+    width: 50%;
+    height: 25%;
+    display: block;
+}
+#event-image
+{
+    top: 0;
+}

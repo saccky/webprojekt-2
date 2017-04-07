@@ -1,12 +1,14 @@
-
 <!---Artikkel start --->
-<a href="<?= $event['link'] ?>" target="_blank"><?= $event['link-name'] ?></a>
+<a href="<?= $event['article-link'] ?>" target="_blank"><?= $event['article-link-name'] ?></a>
 
-<h2><?= $event['title'] ?></h2>
-BY <a class="av" href="<?= $event['author-link'] ?>" target="_blank"><?= $event['author'] ?></a>
+<h2><?= $event['article-title'] ?></h2>
+BY 
+<a class="av" href="<?= $event['article-author-link'] ?>" target="_blank">
+    <?= $event['article-author'] ?>
+</a>
 
 <p>
-    <img class="me" width="200" src="<?= $event['image-path'] ?>">
-    <?= $event['body'] ?>
+    <img class="me" width="200" src="<?= $event['article-image-path'] ?>">
+    <?= $event['article-body'] ?>
 </p>
 <!---Artikkel slutt --->
