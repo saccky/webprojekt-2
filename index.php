@@ -1,5 +1,8 @@
 <?php   
-    require 'connection-article.php';
+    require 'connection-header.php';
+    $statement = $connection->prepare('SELECT * FROM articles ORDER BY id DESC LIMIT 10');
+    //Order by desc for å hente sist innlagte artikler først, kan evt. legge til og order by dato (kan også bruke carbon for ekstrapoeng)
+    require 'connection-footer.php';
     require 'header.php';
 ?>
     
@@ -26,7 +29,7 @@
         <article>
             
             <!--- Printer alle artikler --->
-            <?php foreach ($articles as $event) 
+            <?php foreach ($events as $event) 
                 {  
                     require 'article.php';
                 ?>

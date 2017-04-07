@@ -1,23 +1,10 @@
 <?php
-    require 'connection-event.php';
-    require 'header.php';
-
+    require 'connection-header.php';
     /* Kode for spesefik spørring etter events med tag "kultur" (Ikke CAPS-sensetiv) */
-    $statement = $connection->prepare('SELECT * FROM events WHERE tag = "mat" ORDER BY id DESC LIMIT 10 ');
-
-    /* 
-    <!--- connection-event-footer.php foreslått start ---> 
-    <?php */
-    $statement->execute();
-
-    $events = [];
-
-    while($row = $statement->fetch(PDO::FETCH_ASSOC)) 
-    {
-	   $events[] = $row;
-    } 
-    /* connection-event-footer.php slutt */
-
+    $statement = $connection->prepare('SELECT * FROM events WHERE tag = "mat" ORDER BY id DESC LIMIT 10');
+    //Order by desc for å hente sist innlagte events først, kan evt. legge til og order by dato (kan også bruke carbon for ekstrapoeng)
+    require 'connection-footer.php';
+    require 'header.php';
 ?>
 
     <h1>MAT</h1>
