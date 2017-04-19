@@ -12,6 +12,11 @@ BY
     <?= $event['article-body'] ?>
 </p>
 
+<!--- Sletteknapp --->
+<a class="article-delete-class" href="delete.php?id=<?= $event['id'] ?>">
+    <button class="article-delete-btn" type="button"> Slett Artikkel </button>
+</a>
+
 <script>
     /* Gjemmer knappen hvis det ikke er noe å linke til */
 </script>
