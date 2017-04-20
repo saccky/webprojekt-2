@@ -30,7 +30,7 @@
             </header>
             <nav>
                 <ul>
-                    <li><a href="index.php">HJEM/a></li>
+                    <li><a href="index.php">HJEM</li>
                     <li><a href="kultur.php">KULTUR</a>
 
                         <img class="logoer" id="facelogo" src="facebook-logo.png">
