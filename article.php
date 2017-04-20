@@ -2,7 +2,6 @@
 <a href="<?= $event['article-link'] ?>" target="_blank"><?= $event['article-link-name'] ?></a>
 
 <h2><?= $event['article-title'] ?></h2>
- <a> hei jeg heter </a>
 BY 
 <a class="av" href="<?= $event['article-author-link'] ?>" target="_blank">
     <?= $event['article-author'] ?>
@@ -19,10 +18,14 @@ BY
 </a>
 
 <script>
-    /* Gjemmer knappen hvis det ikke er noe å linke til */
+    //Gjemmer knappen hvis det ikke er noe å linke til //Virker kun på den siste artikkelen printet
+    if(<?= $event['article-event-fk'] ?> < 0) //hvis fremmednøkkelen er mindre enn null, gjem knapp. isNaN virket visst ikke..
+    {
+        document.getElementById("article-event-link").style.display = "none";
+    }
 </script>
 
-<a class="article-event-link-class" href="article-event.php?id=<?= $event['article-event-fk'] ?>">
+<a id="article-event-link" href="article-event.php?id=<?= $event['article-event-fk'] ?>">
     <button class="article-event-link-btn" type="button"> Se Hendelsen </button>
 </a>
 <!---Artikkel slutt --->
