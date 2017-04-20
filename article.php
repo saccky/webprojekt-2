@@ -19,7 +19,7 @@ BY
 
 <script>
     //Gjemmer knappen hvis det ikke er noe å linke til //Virker kun på den siste artikkelen printet
-    if(<?= $event['article-event-fk'] ?> < 0) //hvis fremmednøkkelen er mindre enn null, gjem knapp. isNaN virket visst ikke..
+    if(<?= $event['article-event-fk'] ?>) //hvis fremmednøkkelen ikke er null, gjem knapp
     {
         document.getElementById("article-event-link").style.display = "none";
     }
