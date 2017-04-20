@@ -23,23 +23,23 @@ body {
 }
 
 .logoer{
-    position: absolute;
+    position: relative;
     top: 245px;
 }
 
 #facelogo {
     width: 50px;
-    right: 190px;
+    right: 300px;
 }
 
 #twitterlogo {
     width: 30px;
-    right: 150px;
+    right: 250px;
 }
 
 #instalogo {
     width: 30px;
-    right: 100px;
+    right: 200px;
 }
 
 header {
