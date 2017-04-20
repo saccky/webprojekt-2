@@ -30,11 +30,7 @@
 
             </header>
             <img class="logoer" id="facelogo" src="./logoer/facebook-logo.png">
-
-
             <img class="logoer" id="twitterlogo" src="./logoer/twitter-logo.png">
-
-
             <img class="logoer" id="instalogo" src="./logoer/instagrom-logo.png">
 
             <nav>
@@ -48,8 +44,7 @@
 
                         <ul>
                             <li><a href="#">Kunst</a></li>
-                            <li><a href="#">Utstilling</a></li>
-                            <li><a href="#">Utstilling</a></li>
+                            <li><a href="#">Historie</a></li>
                             <li><a href="#">Utstilling</a></li>
                         </ul>
                     </li>

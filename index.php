@@ -13,7 +13,7 @@
 <div id="SlidesContainer">
     <img class="Slides" src="./Bilder-Skole/westerdals_bygning_01-1-ekempel.jpg">
     <img class="Slides" src="./Bilder-Mat/mathallen-andre-etasje-side.jpg">
-    <img class="Slides" src="Bilder-Mat/Liv-og-r%C3%B8re-i-Mathallen-1500x750.jpg">
+    <img class="Slides" src="Bilder-Mat/mathallen.jpg">
     <img class="Slides" src="./Bilder-Aktivitet/akerselven-fjerdingen.jpg">
     <img class="Slides" src="Bilder-Skole/campus-fjerdingen.jpg">
 </div>
