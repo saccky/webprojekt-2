@@ -38,7 +38,8 @@
 
             <nav>
                 <ul>
-                    <li><a href="index.php">HJEM</li>
+                   <li><a href="index.php">HJEM</li> 
+                       
                     <li><a href="kultur.php">KULTUR</a>
 
 
