@@ -53,6 +53,6 @@
                     <li><a href="mat.php">MAT</a></li>
                     <li><a href="skole.php">SKOLE</a></li>
                     <li><a href="testside.php">TEST-SIDE</a></li>
-                    <li><a href="article-event.php">articleevent</a></li>
+                    <li><a href="article-event.php">A</a></li>
                 </ul>
             </nav>
