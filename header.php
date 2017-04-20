@@ -28,18 +28,20 @@
 
 
             </header>
+            <img class="logoer" id="facelogo" src="facebook-logo.png">
+
+
+            <img class="logoer" id="twitterlogo" src="twitter-logo.png">
+
+
+            <img class="logoer" id="instalogo" src="instagrom-logo.png">
+
             <nav>
                 <ul>
                     <li><a href="index.php">HJEM</li>
                     <li><a href="kultur.php">KULTUR</a>
 
-                        <img class="logoer" id="facelogo" src="facebook-logo.png">
 
-
-                        <img class="logoer" id="twitterlogo" src="twitter-logo.png">
-
-
-                        <img class="logoer" id="instalogo" src="instagrom-logo.png">
 
 
                         <ul>
@@ -53,6 +55,6 @@
                     <li><a href="mat.php">MAT</a></li>
                     <li><a href="skole.php">SKOLE</a></li>
                     <li><a href="testside.php">TEST-SIDE</a></li>
-                    <li><a href="article-event.php">A</a></li>
+                    <li><a href="article-event.php">ARTIKELEVENT</a></li>
                 </ul>
             </nav>
