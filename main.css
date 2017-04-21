@@ -51,7 +51,7 @@ header {
 
 /* NAV BAR */
 
-nav{
+.navigation{
     margin-bottom: -25px;
     }
 /*nav ul{
@@ -60,9 +60,9 @@ border-bottom: 70px;
 
 /* UL/LI */
 
-ul {
+ul{
     list-style-type: none;
-   padding: 20px;
+    padding: 20px;
     margin-bottom: 0;
     overflow: hidden;
     background-color: black;
@@ -91,7 +91,7 @@ li a:hover {
 
 ul li {
     display: inline;
-        text-decoration: none;
+    text-decoration: none;
 
 }
 
