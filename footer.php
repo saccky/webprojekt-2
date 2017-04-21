@@ -1,6 +1,6 @@
             <div class="mainFooter">
                 <footer>
-                     &copy;2017 Laget av Kenneth Saccky, Linda Helene B. Nordråk, 
+                     &copy;2017 Laget av Grupp 13 
                 </footer>
             </div>
 
