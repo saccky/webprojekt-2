@@ -6,16 +6,16 @@ body {
     line-height: 1.5;
     position: relative;
     padding: 20px;
-    margin: auto;
+    margin: auto 10%;
 }
 
-#wrapper {
+/*#wrapper {
     width: 980px;
     text-align: left;
     margin-left: auto;
     margin-right: auto;
     background-color: #FFFFFF;
-}
+}*/
 
 #logo {
     left: 300px;
@@ -49,65 +49,79 @@ header {
     padding: 20px;
 }
 
+/* NAV BAR */
+
+nav{
+    margin-bottom: -25px;
+    }
+/*nav ul{
+border-bottom: 70px;
+}*/
 
 /* UL/LI */
 
 ul {
     list-style-type: none;
-    margin: 0px;
-    padding: 10px;
+   padding: 20px;
+    margin-bottom: 0;
     overflow: hidden;
-    background-color: gray;
+    background-color: black;
 }
 
-li {
+/*li {
     float: left;
-}
+}*/
 
 li a {
-    display: block;
+   display: inline;
     color: white;
+    margin: auto;
     text-align: center;
-    padding: 14px 16px;
+    padding: 10px 40px 0px 40px;
     text-decoration: none;
+
 }
 
 
 li a:hover {
-    background-color: #111;
+    color: grey;
+    text-decoration: none;
 }
 
 
 ul li {
-    display: inline-block;
+    display: inline;
+        text-decoration: none;
+
 }
 
-ul li:hover {
+/*ul li:hover {
     background: #333;
-}
+}*/
 
 ul li:hover ul {
     display: block;
-}
+    padding: auto;
+align-content: center;}
 
 ul li ul {
     position: absolute;
     width: 95px;
     display: none;
 }
-
+/*
 ul li ul li {
     display: block;
-}
-
+}*/
+/*
 ul li ul li:hover {
     text-decoration: underline;
 }
-
+*//*
 ul li ul li a {
     display: block;
 }
-
+*/
 
 /* Hovedinnhold */
 
