@@ -18,10 +18,11 @@ BY
 </a>
 
 <script>
+    document.getElementById("article-event-link").style.display = "block";
     //Gjemmer knappen hvis det ikke er noe å linke til //Virker kun på den siste artikkelen printet
-    if(<?= $event['article-event-fk'] ?>) //hvis fremmednøkkelen ikke er null, gjem knapp
+    if(<?= $event['article-event-fk'] ?>) //hvis fremmednøkkelen true (ikke er null), vis knapp
     {
-        document.getElementById("article-event-link").style.display = "none";
+        document.getElementById("article-event-link").style.display = "block";
     }
 </script>
 
