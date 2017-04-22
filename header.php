@@ -31,22 +31,8 @@
             <nav>
                 <ul>
                    <li><a href="index.php">HJEM</li> 
-                       
-                    <li><a href="kultur.php">KULTUR</a>
-
-
-
-
-                        <ul>
-                            <li><a href="#">Kunst</a></li>
-                            <li><a href="#">Historie</a></li>
-                            <li><a href="#">Utstilling</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="aktivitet.php">AKTIVITET</a></li>
-                    <!--<li><a href="mat.php">MAT</a></li> -->
-                    <li><a href="skole.php">SKOLE</a></li>
-                    <li><a href="testside.php">TEST-SIDE</a></li>
-                    <!-- <li><a href="new-test.php">ADD</a></li> -->
+                       <li><a href="aktivitet.php">AKTIVITET</li>
+                        <li><a href="kultur.php">KULTUR</li>
+                            <li><a href="skole.php">SKOLE</li>
                 </ul>
             </nav>
