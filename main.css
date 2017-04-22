@@ -4,7 +4,7 @@ body {
     text-align: left;
     font-size: 1em;
     line-height: 1.5;
-    position: relative;
+    /*position: relative; */
     padding: 20px;
     margin: auto 10%;
 }
@@ -19,7 +19,7 @@ body {
 
 #logo {
     left: 300px;
-    position: relative;
+    margin: auto 33%;
 }
 
 .logoer{
@@ -48,6 +48,7 @@ header {
     color: white;
     padding: 20px;
 }
+
 
 /* NAV BAR */
 
