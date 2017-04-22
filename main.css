@@ -17,6 +17,7 @@ body {
     background-color: #FFFFFF;
 }*/
 
+/******** LOGO *******/
 #logo {
     display: block;
     max-width: 400px;
@@ -24,7 +25,7 @@ body {
 }
 
 .logoer{
-    position: absolute;
+   /* position: absolute; */
     top: 245px;
 }
 

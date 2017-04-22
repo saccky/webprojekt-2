@@ -18,21 +18,16 @@
         <title>WestGuide</title>
     </head>
 
-    <body>
-        <div id="wrapper">
+   <!--<body>
+        <div id="wrapper"> -->
             <header>
 
                 <a href="index.php">
                     <img id="logo" src="./logoer/logo-klipt.png" width="400px">
                 </a>
 
-
-
-            </header>
-            <img class="logoer" id="facelogo" src="./logoer/facebook-logo.png">
-            <img class="logoer" id="twitterlogo" src="./logoer/twitter-logo.png">
-            <img class="logoer" id="instalogo" src="./logoer/instagrom-logo.png">
-
+</header>
+          
             <nav>
                 <ul>
                    <li><a href="index.php">HJEM</li> 
