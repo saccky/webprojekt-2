@@ -5,7 +5,7 @@ body {
     font-size: 1em;
     line-height: 1.5;
     /*position: relative; */
-    padding: 20px;
+    padding: 0px;
     margin: auto 10%;
 }
 
@@ -18,8 +18,9 @@ body {
 }*/
 
 #logo {
-    left: 300px;
-    margin: auto 33%;
+    display: block;
+    max-width: 400px;
+    margin: 0 auto;
 }
 
 .logoer{
