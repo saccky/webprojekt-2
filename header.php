@@ -33,6 +33,7 @@
                     <li><a href="index.php">HJEM</a></li> 
                     <li><a href="aktivitet.php">AKTIVITET</a></li>
                     <li><a href="kultur.php">KULTUR</a></li>
+                    <li><a href="mat.php">MAT</a></li>
                     <li><a href="skole.php">SKOLE</a></li>
                 </ul>
             </nav>
