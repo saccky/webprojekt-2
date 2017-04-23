@@ -65,9 +65,10 @@ footer {
     top: 100px;
     right: 400px;
     text-align: center;
-    background-color: black;
+    padding: 30px;
     padding: 0px 5px 0px;
     margin: 20px 0 -25px;
+    background-color: black;
 }
 /*
 ul{
