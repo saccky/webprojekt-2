@@ -12,7 +12,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="">
         <meta name="author" content="">
-        <!--- link rel="stylesheet" href="normalize.css" / --->
+        <link rel="stylesheet" href="normalize.css" / >
         <link rel="stylesheet" href="main.css" />
         <link rel="icon" href="logo1.png" />
         <title>WestGuide</title>

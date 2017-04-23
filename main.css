@@ -68,6 +68,9 @@ footer {
     padding: 30px;
     background-color: black;
 }
+#footertext{
+    color: white;
+}
 /*
 ul{
     display: block;
