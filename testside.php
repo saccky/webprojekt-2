@@ -9,7 +9,7 @@
     </form>
 
     <a class="article-event-link-class" href="search-results.php">
-        <button class="article-event-link-btn" type="button"> Se search results </button>
+        <button class="article-event-link-btn" type="button"> Se tom search-results </button>
     </a>
 
     <br>
