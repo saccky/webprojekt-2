@@ -1,19 +1,91 @@
 <?php
+    session_start();
     require 'header.php'
 ?>
     <h1>Testside</h1> Test ting her:
 
+    <!--- Søkefunksjon start --->
+    <!--- Kan bare søke etter id og tags --->
     <form action="search-results.php" method="GET">
         <input id="search-field" name="search" type="text" placeholder="Sok etter...">
         <input id="search-button" type="submit" value="Sok">
     </form>
+    <!--- Søkefunksjon slutt --->
+    
+    <hr>
+    
+    <!--- Login start --->
+    <!--- "Logger" inn bruker på siden i action-tagen, php koden under sjekker om login er gyldig, og knapper eller lignende kan legges inn i if-blokkene --->
+    <form action="testside.php" method="GET">
+        <input id="login-user" name="login-user" type="text" placeholder="Brukernavn"> <br>
+        <input id="login-pass" name="login-pass" type="password" placeholder="Passord"> <br>
+        <input id="login-button" type="submit" value="Login">
+    </form>
 
-    <a class="article-event-link-class" href="search-results.php">
-        <button class="article-event-link-btn" type="button"> Se tom search-results </button>
-    </a>
+    <?php 
+        if(isset($_SESSION['use']))
+        {
+            echo "<br>Du er logget inn<br>";
+        }
 
-    <br>
+        if(!isset($_SESSION['use'])) // If session is not set then redirect to Login Page
+        {
+            $user = $_GET['login-user'];
+            $pass = $_GET['login-pass'];
 
+            if($user == "Admin" && $pass == "1234")
+            {                                
+                $_SESSION['use']=$user;
+                echo 'Logget inn';
+            }
+            else
+            {
+                echo "invalid UserName or Password";        
+            }
+        }
+
+        /*
+        //Eksempelkode for login og unksjoner en bruker kan ha
+        //Merk at brukernavn og passord er Admin og Gruppe32, kan også bruke database til dette
+        //Merk også brukernavn og passord vises i url
+       $username = $_GET['login-user'];
+       $password = $_GET['login-pass'];
+
+        if($username == "Admin" && $password == "Gruppe32")
+        {
+            echo "<br>Du er logget inn<br>";
+        }
+        else if($username == "Admin" && $password != "Gruppe32")
+        {
+            echo "<br>Feil passord!<br>";
+        }
+        else if($username != "Admin" || $password != "Gruppe32")
+        {
+            //printes uansett, se om mulig/nødvendig med actionlistener
+            echo "<br>Feil brukernavn eller passord!<br>";
+        }
+        */
+    ?>
+    <!--- Login slutt --->
+
+    <!--- Logout start --->
+    <form action="testside.php" method="GET">
+        <input id="logout-user" name="logout-user" type="text" placeholder="Brukernavn"> <br>
+        <input id="logout-button" type="submit" value="Logout">
+    </form>
+
+    <?php
+        $logout = $_GET['logout-user'];
+        if($logout == "Admin") 
+        {
+            session_destroy();  
+            echo "Logget ut<br>";
+        }
+    ?>    
+    <!--- Lougout slutt --->
+
+    <hr>
+    
     <div id="googleMap" style="width:400px;height:400px;">
         <script>
             //Lat&Lng Brenneriveien '59.920543, 10.752696'

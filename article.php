@@ -1,3 +1,7 @@
+<?php
+    session_start();
+?>
+
 <!---Artikkel start --->
 <a href="<?= $event['article-link'] ?>" target="_blank"><?= $event['article-link-name'] ?></a>
 
@@ -12,11 +16,14 @@ BY
     <?= $event['article-body'] ?>
 </p>
 
-<!--- Sletteknapp --->
-<a class="article-delete-class" href="delete.php?id=<?= $event['id'] ?>">
-    <button class="article-delete-btn" type="button"> Slett Artikkel </button>
-</a>
-
+<?php
+    if(isset($_SESSION['use']))
+    { ?>
+        <!--- Sletteknapp --->
+        <a class="article-delete-class" href="delete.php?id=<?= $event['id'] ?>">
+            <button class="article-delete-btn" type="button"> Slett Artikkel </button>
+        </a>
+    <?php } ?>
 
 <?php
     //hvis fremmednøkkelen er true (ikke er null), legg til knapp

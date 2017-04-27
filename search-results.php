@@ -1,4 +1,5 @@
 <?php
+    session_start();
     require 'connection-header.php';
     //Select * from events where tag like %getsearch%(enum med wildcard) or id like int
     //Eksempel viser direkte get fra url (tag, som er forskjellig fra get id)
@@ -20,6 +21,17 @@
 ?>
 
 <h1> Viser tag/id resultater for: "<?= $getsearch ?>" </h1>
+
+<?php
+     if(isset($_SESSION['use']))
+        {
+            echo "<br>Du er logget inn<br>";
+        }
+    else
+    {
+        echo "Ikke logget inn";
+    }
+?>
 
 <?php
     echo "Artikler: <br>"; //Kan gjøres i HTML, bare husk ? > (uten mellomrom) for å lukke php tag, og < ?php for å starte igjen
