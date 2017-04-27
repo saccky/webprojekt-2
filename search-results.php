@@ -5,18 +5,18 @@
     //Eksempel viser direkte get fra url (tag, som er forskjellig fra get id)
     //$statement = $connection->prepare('SELECT * FROM events WHERE tag LIKE "'.$_GET['search'].'"'); 
     $getsearch = $_GET['search'];   
-    $statement = $connection->prepare('SELECT * FROM events WHERE tag LIKE "%'.$getsearch.'%" OR id LIKE "'.$getsearch.'"');
+    $statement = $connection->prepare('SELECT * FROM events WHERE id LIKE "'.$getsearch.'" OR tag LIKE "%'.$getsearch.'%"');
+    //UPDATE events SET event-title = replace(event-title, ' ', '') OR CONTAINS(event-title, "'.$getsearch.'") // Fjerner mellomrom mellom ord i event-title, som ser ut som det gjør det mulig å søke etter individuelle ord. Koder er ufulstendige, virker ikke, og fjerner mellomrommene permanent. Med mindre man lager et view eller noe.
     $statement2 = $connection->prepare('SELECT * FROM articles WHERE id LIKE "'.$getsearch.'"');
     require 'connection-footer.php';
+    //Merk: det ble vurdert hvorvidt det var vits å ha connection-footer.php, og om det skulle bli laget en connection-ooter2.php, men det viser seg at nesten alle sidene bruker connection-footer.php, og bare denne (sålangt) bruker en andre connection-footer.
     //"Connection-footer2" start
     $statement2->execute();
     $events2 = [];
     while($row2 = $statement2->fetch(PDO::FETCH_ASSOC)) 
     {
         $events2[] = $row2;
-    } 
-    //"Connection-footer2" slutt
-
+    }
     require 'header.php';
 ?>
 
