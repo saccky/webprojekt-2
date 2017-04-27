@@ -1,5 +1,5 @@
 <?php
-    session_start();
+    session_start(); //Starter session
     require 'header.php'
 ?>
     <h1>Testside</h1> Test ting her:
@@ -14,75 +14,54 @@
     
     <hr>
     
-    <!--- Login start --->
-    <!--- "Logger" inn bruker på siden i action-tagen, php koden under sjekker om login er gyldig, og knapper eller lignende kan legges inn i if-blokkene --->
+    <!--- Login --->
+    <!--- Logger inn bruker og sender den til siden i action-tagen, php koden under sjekker om login er gyldig, og knapper eller lignende kan legges inn i if-blokkene --->
+    <!--- Merk: "Login" er brukt litt liberalt her, og passord kan være synlig i url, samt at det ikke er noen scrubbing av input-data. Med andre ord er det ingen sikkerhet i det hele tatt. --->
     <form action="testside.php" method="GET">
         <input id="login-user" name="login-user" type="text" placeholder="Brukernavn"> <br>
         <input id="login-pass" name="login-pass" type="password" placeholder="Passord"> <br>
-        <input id="login-button" type="submit" value="Login">
+        <input name="login-button" type="submit" value="Logg inn">
     </form>
 
-    <?php 
-        if(isset($_SESSION['use']))
+    <?php               
+        $user = $_GET['login-user'];
+        $pass = $_GET['login-pass'];
+
+        if(isset($_SESSION['use'])) //Hvis en session eksisterer, bruk den
         {
-            echo "<br>Du er logget inn<br>";
+            echo "Du er allerede logget inn!<br>";
         }
 
-        if(!isset($_SESSION['use'])) // If session is not set then redirect to Login Page
+        if(!isset($_SESSION['use'])) //Hvis det ikke er en session i bruk, login
         {
-            $user = $_GET['login-user'];
-            $pass = $_GET['login-pass'];
-
-            if($user == "Admin" && $pass == "1234")
-            {                                
-                $_SESSION['use']=$user;
-                echo 'Logget inn';
-            }
-            else
+            if(isset($_GET['login-button'])) //Sjekker om knappen med NAME(ikke id) "login-button er trykket
             {
-                echo "invalid UserName or Password";        
+                if($user == "Admin" && $pass == "1234") //Bruekrnavn/passord er Admin/1234
+                {                                
+                    $_SESSION['use'] = $user; //setter session til user(?)
+                    echo ''.$user.' logget inn!'; 
+                }
+                else //if($user != "Admin" || $pass != "1234") //Hvis ikke brukernavn og passord er korrekt, print feil
+                {
+                    echo "Ugyldig brukernavn eller passord!";        
+                }
             }
         }
-
-        /*
-        //Eksempelkode for login og unksjoner en bruker kan ha
-        //Merk at brukernavn og passord er Admin og Gruppe32, kan også bruke database til dette
-        //Merk også brukernavn og passord vises i url
-       $username = $_GET['login-user'];
-       $password = $_GET['login-pass'];
-
-        if($username == "Admin" && $password == "Gruppe32")
-        {
-            echo "<br>Du er logget inn<br>";
-        }
-        else if($username == "Admin" && $password != "Gruppe32")
-        {
-            echo "<br>Feil passord!<br>";
-        }
-        else if($username != "Admin" || $password != "Gruppe32")
-        {
-            //printes uansett, se om mulig/nødvendig med actionlistener
-            echo "<br>Feil brukernavn eller passord!<br>";
-        }
-        */
     ?>
-    <!--- Login slutt --->
 
-    <!--- Logout start --->
+    <br>
+
+    <!--- Logout ---> 
     <form action="testside.php" method="GET">
-        <input id="logout-user" name="logout-user" type="text" placeholder="Brukernavn"> <br>
-        <input id="logout-button" type="submit" value="Logout">
-    </form>
-
+        <input name="logout-button" type="submit" value="Logg ut">
+    </form>  
     <?php
-        $logout = $_GET['logout-user'];
-        if($logout == "Admin") 
+        if(isset($_GET['logout-button'])) //Sjekker om knapp med NAME "logout-button er trykket
         {
-            session_destroy();  
-            echo "Logget ut<br>";
+            session_destroy(); //Terminerer session
+            echo ''.$user.' logget ut!'; //$user Virker ikke / konfirmasjon til bruker
         }
-    ?>    
-    <!--- Lougout slutt --->
+    ?>
 
     <hr>
     

@@ -20,18 +20,20 @@
     require 'header.php';
 ?>
 
-<h1> Viser tag/id resultater for: "<?= $getsearch ?>" </h1>
+<h1> Viser tag/id resultater for: <?= $getsearch ?> </h1>
 
 <?php
      if(isset($_SESSION['use']))
-        {
-            echo "<br>Du er logget inn<br>";
-        }
-    else
     {
-        echo "Ikke logget inn";
+        echo "Du er logget inn";
     }
-?>
+    else
+    { ?>
+        <a href="testside.php">Trykk her for a logge inn</a>
+    <?php } ?>
+
+<br>
+<hr>
 
 <?php
     echo "Artikler: <br>"; //Kan gjøres i HTML, bare husk ? > (uten mellomrom) for å lukke php tag, og < ?php for å starte igjen
