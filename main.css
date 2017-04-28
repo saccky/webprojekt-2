@@ -58,7 +58,7 @@ nav > ul > li {
   cursor: pointer;
 }
 nav > ul > li:hover {
-  background: #d5d5d5;
+  background: #777;
 /*  border-radius: 0px;*/
 }
 
@@ -70,11 +70,12 @@ ul.drop-menu {
   padding: 0;
 }
 ul.drop-menu li {
-  background: #666;
-  color: rgba(255, 255, 255, 0.7);
+  background: #FFF;
+  color: rgba(0,0,0,1);
 }
 ul.drop-menu li:hover {
-  background: #606060;
+  background: #000;
+    color: white;
 }
 ul.drop-menu li:last-child {
   border-radius: 0px 0px 5px 5px;

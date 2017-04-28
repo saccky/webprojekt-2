@@ -31,7 +31,10 @@
            <div id="box">         
 <nav>
   <ul>
-    <li>style 1
+    <li>hjem
+      
+    </li>
+    <li>aktiviteter
       <ul class="drop-menu menu-#{i}">
         <li>uno</li>
         <li>dos</li>
@@ -41,7 +44,7 @@
         <li>seis</li>
       </ul>
     </li>
-    <li>style 2
+    <li>mat
       <ul class="drop-menu menu-#{i}">
         <li>uno</li>
         <li>dos</li>
@@ -51,17 +54,7 @@
         <li>seis</li>
       </ul>
     </li>
-    <li>style 3
-      <ul class="drop-menu menu-#{i}">
-        <li>uno</li>
-        <li>dos</li>
-        <li>tres</li>
-        <li>cuatro</li>
-        <li>cinco</li>
-        <li>seis</li>
-      </ul>
-    </li>
-    <li>style 4
+    <li>kultur
       <ul class="drop-menu menu-#{i}">
         <li>uno</li>
         <li>dos</li>
