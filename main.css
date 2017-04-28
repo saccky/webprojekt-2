@@ -59,6 +59,7 @@ nav > ul > li {
 }
 nav > ul > li:hover {
   background: #777;
+    color: orange;
 /*  border-radius: 0px;*/
 }
 
