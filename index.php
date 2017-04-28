@@ -24,9 +24,9 @@
     ?>
     <!--- Slideshow slutt --->
 
-    <br>
+   <!-- <br>-->
 
-    <hr>
+   <!-- <hr> --->
     <br>
     <div class="artikel1">
         <article>
