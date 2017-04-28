@@ -28,12 +28,49 @@
 
             </header>
           
-            <nav>
-                <ul>
-                    <li><a href="index.php">HJEM</a></li> 
-                    <li><a href="aktivitet.php">AKTIVITET</a></li>
-                    <li><a href="kultur.php">KULTUR</a></li>
-                    <li><a href="mat.php">MAT</a></li>
-                    <li><a href="skole.php">SKOLE</a></li>
-                </ul>
-            </nav>
+           <div id="box">         
+<nav>
+  <ul>
+    <li>style 1
+      <ul class="drop-menu menu-#{i}">
+        <li>uno</li>
+        <li>dos</li>
+        <li>tres</li>
+        <li>cuatro</li>
+        <li>cinco</li>
+        <li>seis</li>
+      </ul>
+    </li>
+    <li>style 2
+      <ul class="drop-menu menu-#{i}">
+        <li>uno</li>
+        <li>dos</li>
+        <li>tres</li>
+        <li>cuatro</li>
+        <li>cinco</li>
+        <li>seis</li>
+      </ul>
+    </li>
+    <li>style 3
+      <ul class="drop-menu menu-#{i}">
+        <li>uno</li>
+        <li>dos</li>
+        <li>tres</li>
+        <li>cuatro</li>
+        <li>cinco</li>
+        <li>seis</li>
+      </ul>
+    </li>
+    <li>style 4
+      <ul class="drop-menu menu-#{i}">
+        <li>uno</li>
+        <li>dos</li>
+        <li>tres</li>
+        <li>cuatro</li>
+        <li>cinco</li>
+        <li>seis</li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+       </div>
