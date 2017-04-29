@@ -8,6 +8,7 @@ body {
     padding: 0px;
     margin: auto 10%;
 }
+/* wrapper deaktivert i header.php */
 #wrapper {
     width: 980px;
     text-align: left;
@@ -17,82 +18,84 @@ body {
 }
 
 /* NAV BAR */
-/* NAV BAR */
-
 
 /*#box{
-  width: 100%;
-   margin-left: 0;
-  margin-right: 0;
-  display: inline-block;
-  background: #000; 
-      /*border-radius: 5px;*/
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    display: inline-block;
+    background: #000; 
+    /*border-radius: 5px;*/
 
-    
 /*}*/
-
 nav > ul {
     float: left;
-  list-style: none;
+    list-style: none;
     padding: 0;
-  width: 100%;
-      background: #000; 
-margin: 0;
-  align-content: center;
-  /*border-radius: 5px;*/
+    width: 100%;
+    background: #000; 
+    margin: 0;
+    align-content: center;
+    /*border-radius: 5px;*/
     
 }
 nav > ul > li {
-  float: left;
-  list-style: inline-block;
-  width: 20%;
+    float: left;
+    list-style: inline-block;
+    width: 16.666667%; /* 5 elementer i navbaren = 20% */
     padding-left: 0;
     padding-right: 0;
-  height: 65px;
-  line-height: 65px;
-  position: relative;
-  text-transform: uppercase;
+    height: 65px;
+    line-height: 65px;
+    position: relative;
+    text-transform: uppercase;
     text-align: center;
-  font-size: 14px;
-  color: #FFF/*rgba(255,255,255, 0.9)*/;
-  cursor: pointer;
+    font-size: 14px;
+    color: #FFF/*rgba(255,255,255, 0.9)*/;
+    cursor: pointer;
 }
 nav > ul > li:hover {
-  background: #777;
+    background: #777;
     color: orange;
 /*  border-radius: 0px;*/
 }
-
+nav > ul > a:hover {
+    background: #777;
+    color: orange;
+    text-emphasis-color: orange;
+    text-decoration-color: orange;
+/*  border-radius: 0px;*/
+}
 ul.drop-menu {
-  position: absolute;
-  top: 100%;
-  left: 0%;
-  width: 100%;
-  padding: 0;
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    width: 100%;
+    padding: 0;
 }
 ul.drop-menu li {
-  background: #FFF;
-  color: rgba(0,0,0,1);
+      background: #FFF;
+      color: rgba(0,0,0,1);
 }
 ul.drop-menu li:hover {
-  background: #000;
-    color: white;
+      background: #000;
+      color: white;
 }
 ul.drop-menu li:last-child {
-  border-radius: 0px 0px 5px 5px;
+    border-radius: 0px 0px 5px 5px;
 }
 
 ul.drop-menu li {
-  display: none;
+    display: none;
 }
 
 li:hover > ul.drop-menu li {
-  display: block;
+    display: block;
 }
 
 
 /* Footer */
-.mainFooter {
+    .mainFooter {
     margin-top: 100px;
     background-color: black;
     color: white;

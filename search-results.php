@@ -25,7 +25,7 @@
 <?php
      if(isset($_SESSION['use']))
     {
-        echo "Du er logget inn";
+        echo 'Du er logget inn! <a href="testside.php">Logg ut</a>';
     }
     else
     { ?>
@@ -47,12 +47,23 @@
         echo "Beklager, vi fant ingen artikler :/ <br>";
     }
     */
+?>
+
+<br>
+<hr>
+
+<?php
     
     echo "<br><br>Hendelser:";
     foreach ($events as $event) 
     {
         require 'event.php';
     }
-    
+?>
+
+<br>
+<hr>
+
+<?php
     require 'footer.php';
 ?>

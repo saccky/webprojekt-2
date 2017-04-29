@@ -10,7 +10,6 @@
         <input id="search-field" name="search" type="text" placeholder="Sok etter...">
         <input id="search-button" type="submit" value="Sok">
     </form>
-    <!--- Søkefunksjon slutt --->
     
     <hr>
     

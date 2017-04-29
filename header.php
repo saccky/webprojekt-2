@@ -28,42 +28,65 @@
 
             </header>
           
-           <div id="box">         
-<nav>
-  <ul>
-    <li>hjem
-      
-    </li>
-    <li>aktiviteter
-      <ul class="drop-menu menu-#{i}">
-        <li>uno</li>
-        <li>dos</li>
-        <li>tres</li>
-        <li>cuatro</li>
-        <li>cinco</li>
-        <li>seis</li>
-      </ul>
-    </li>
-    <li>mat
-      <ul class="drop-menu menu-#{i}">
-        <li>uno</li>
-        <li>dos</li>
-        <li>tres</li>
-        <li>cuatro</li>
-        <li>cinco</li>
-        <li>seis</li>
-      </ul>
-    </li>
-    <li>kultur
-      <ul class="drop-menu menu-#{i}">
-        <li>uno</li>
-        <li>dos</li>
-        <li>tres</li>
-        <li>cuatro</li>
-        <li>cinco</li>
-        <li>seis</li>
-      </ul>
-    </li>
-  </ul>
-</nav>
-       </div>
+            <div id="box">         
+                <nav>
+                    <ul>
+                        <li>
+                            <!---a href="index.php">hjem</a---> <!--- Må linkes til siden, men å legge linken rundt teksten gjør bare teksten klikkbar, og å legge lingen rundt <li> ødelegger layout --->
+                            hjem
+                        </li>
+                        <li>
+                            <a href="aktivitet.php">aktiviteter</a>
+                            <ul class="drop-menu menu-#{i}">
+                                <li>uno</li>
+                                <li>dos</li>
+                                <li>tres</li>
+                                <li>cuatro</li>
+                                <li>cinco</li>
+                                <li>seis</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="mat.php">mat</a>
+                            <ul class="drop-menu menu-#{i}">
+                                <li>uno</li>
+                                <li>dos</li>
+                                <li>tres</li>
+                                <li>cuatro</li>
+                                <li>cinco</li>
+                                <li>seis</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="kultur.php">kultur</a>
+                            <ul class="drop-menu menu-#{i}">
+                                <li>uno</li>
+                                <li>dos</li>
+                                <li>tres</li>
+                                <li>cuatro</li>
+                                <li>cinco</li>
+                                <li>seis</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="skole.php">skole</a>
+                            <ul class="drop-menu menu-#{i}">
+                                <li>uno</li>
+                                <li>dos</li>
+                                <li>tres</li>
+                                <li>cuatro</li>
+                                <li>cinco</li>
+                                <li>seis</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <!--- Søkefunksjon start --->
+                            <!--- Kan bare søke etter id og tags --->
+                            <form action="search-results.php" method="GET">
+                                <input id="search-field" name="search" type="text" placeholder="Sok etter...">
+                                <input id="search-button" type="submit" value="Sok">
+                            </form>
+                        </li>
+                    </ul>
+                </nav>
+            </div>

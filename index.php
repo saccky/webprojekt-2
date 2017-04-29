@@ -22,12 +22,9 @@
     <?php 
         require 'slideshow.php'; 
     ?>
-    <!--- Slideshow slutt --->
 
-   <!-- <br>-->
-
-   <!-- <hr> --->
     <br>
+
     <div class="artikel1">
         <article>
 
