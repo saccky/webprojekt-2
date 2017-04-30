@@ -6,7 +6,7 @@
 <a href="<?= $event['article_link'] ?>" target="_blank"><?= $event['article_link_name'] ?></a>
 
 <h2><?= $event['article_title'] ?></h2>
-BY 
+av 
 <a class="av" href="<?= $event['article_author_link'] ?>" target="_blank">
     <?= $event['article_author'] ?>
 </a>
