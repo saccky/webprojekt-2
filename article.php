@@ -20,7 +20,7 @@ BY
     if(isset($_SESSION['use']))
     { ?>
         <!--- Sletteknapp --->
-        <a class="article-delete-class" href="delete.php?id=<?= $event['id'] ?>">
+        <a class="article-delete-class" href="delete-article.php?id=<?= $event['id'] ?>">
             <button class="article-delete-btn" type="button"> Slett Artikkel </button>
         </a>
     <?php } ?>
@@ -33,5 +33,3 @@ BY
             <button class="article-event-link-btn" type="button"> Se Hendelsen </button>
         </a>
     <?php } ?>
-
-<!---Artikkel slutt --->

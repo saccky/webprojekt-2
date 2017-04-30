@@ -19,7 +19,8 @@
     </head>
 
     <body>
-        <!--- div id="wrapper" --->
+        <a href="user.php"><div id="hidden-link"></div></a>
+        <!---div id="wrapper"--->
             <header>
 
                 <a href="index.php">

@@ -8,13 +8,22 @@ body {
     padding: 0px;
     margin: auto 10%;
 }
-/* wrapper deaktivert i header.php */
+/* wrapper deaktivert i header.php OOPS: zoom med/uten wrapper */
 #wrapper {
     width: 980px;
     text-align: left;
     margin-left: auto;
     margin-right: auto;
     background-color: #FFFFFF;
+}
+#hidden-link /* Div for link til user.php, aka. login/admin */
+{
+    position: fixed;
+    width: 100px;
+    height: 100px;
+    background-color: transparent;
+    top: 1px;
+    right: 1px;
 }
 
 /* NAV BAR */

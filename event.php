@@ -1,3 +1,7 @@
+<?php
+    session_start();
+?>
+
 <!--- Event start --->
 <div id="EventWrapper">
     <img class="event-image" width="300" height="200" src="<?= $event['event-image-path'] ?>">
@@ -12,4 +16,12 @@
         <?= $event['event-body'] ?>
     </p>
 </div>
-<!--- Event slutt --->
+
+<?php
+    if(isset($_SESSION['use']))
+    { ?>
+        <!--- Sletteknapp --->
+        <a class="event-delete-class" href="delete-event.php?id=<?= $event['id'] ?>">
+            <button class="event-delete-btn" type="button"> Slett Event </button>
+        </a>
+    <?php } ?>

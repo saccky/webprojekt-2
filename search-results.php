@@ -22,17 +22,6 @@
 
 <h1> Viser tag/id resultater for: <?= $getsearch ?> </h1>
 
-<?php
-     if(isset($_SESSION['use']))
-    {
-        echo 'Du er logget inn! <a href="testside.php">Logg ut</a>';
-    }
-    else
-    { ?>
-        <a href="testside.php">Trykk her for a logge inn</a>
-    <?php } ?>
-
-<br>
 <hr>
 
 <?php
@@ -54,7 +43,7 @@
 
 <?php
     
-    echo "<br><br>Hendelser:";
+    echo "Hendelser: <br>";
     foreach ($events as $event) 
     {
         require 'event.php';
