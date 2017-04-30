@@ -10,12 +10,6 @@
         <input id="search-field" name="search" type="text" placeholder="Sok etter...">
         <input id="search-button" type="submit" value="Sok">
     </form>
-    
-    <hr> 
-
-    <form action="user.php" method="GET">
-        <input name="new" type="submit" value="Bruker siden">
-    </form>  
 
     <hr>
     
