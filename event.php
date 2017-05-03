@@ -1,30 +1,15 @@
-<?php
-    session_start();
-?>
-
 <!--- Event start --->
 <div id="EventWrapper">
-    <img class="event_image" width="300" height="200" src="<?= $event['event_image_path'] ?>">
+    <img class="event-image" width="300" height="200" src="<?= $event['event-image-path'] ?>">
 
-    <h2><?= $event['event_title'] ?></h2> 
-    <a class="event-hvor" href="<?= $event['event_where_link'] ?>" target="_blank">
-        <?= $event['event_where'] ?>
+    <h2><?= $event['event-title'] ?></h2>
+    AT 
+    <a class="event-hvor" href="<?= $event['event-where-link'] ?>" target="_blank">
+        <?= $event['event-where'] ?>
     </a>
 
     <p>
-        <?= $event['event_body'] ?>
+        <?= $event['event-body'] ?>
     </p>
 </div>
-
-<?php
-    if(isset($_SESSION['use']))
-    { ?>
-        <!--- Sletteknapp --->
-        <a class="event-delete-class" href="delete-event.php?id=<?= $event['id'] ?>">
-            <button class="event-delete-btn" type="button"> Slett Event </button>
-        </a>
-        <!--- Editknapp --->
-        <a class="event-edit-class" href="edit-event.php?id=<?= $event['id'] ?>">
-            <button class="event-edit-btn" type="button"> Endre Event </button>
-        </a>
-    <?php } ?>
+<!--- Event slutt --->
