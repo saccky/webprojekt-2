@@ -5,7 +5,7 @@
     require 'header.php';
 ?>
 
-<br>
+<h1> Viser hendelser tilknyttet artikkel "<?= $event['id'] ?>" </h1> <!--- Virker ikke --->
 
 <?php
     foreach ($events as $event) 

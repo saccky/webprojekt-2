@@ -1,4 +1,5 @@
 <?php   
+    session_start();
     require 'connection-header.php';
     $statement = $connection->prepare('SELECT * FROM articles ORDER BY id DESC LIMIT 10');
     //Order by desc for å hente sist innlagte artikler først, kan evt. legge til og order by dato (kan også bruke carbon for ekstrapoeng)
@@ -21,12 +22,9 @@
     <?php 
         require 'slideshow.php'; 
     ?>
-    <!--- Slideshow slutt --->
 
     <br>
 
-    <hr>
-    <br>
     <div class="artikel1">
         <article>
 
@@ -35,7 +33,7 @@
             {
                 require 'article.php';
                 ?>
-                <hr>
+             <hr>
                 <br>
             <?php  } ?>
 
