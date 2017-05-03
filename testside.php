@@ -1,18 +1,19 @@
 <?php
-    session_start(); //Starter session
     require 'header.php'
 ?>
     <h1>Testside</h1> Test ting her:
 
-    <!--- Søkefunksjon start --->
-    <!--- Kan bare søke etter id og tags --->
     <form action="search-results.php" method="GET">
         <input id="search-field" name="search" type="text" placeholder="Sok etter...">
         <input id="search-button" type="submit" value="Sok">
     </form>
 
-    <hr>
-    
+    <a class="article-event-link-class" href="search-results.php">
+        <button class="article-event-link-btn" type="button"> Se search results </button>
+    </a>
+
+    <br>
+
     <div id="googleMap" style="width:400px;height:400px;">
         <script>
             //Lat&Lng Brenneriveien '59.920543, 10.752696'
