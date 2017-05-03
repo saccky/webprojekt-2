@@ -1,12 +1,9 @@
-
-
+            <div class="mainFooter">
                 <footer>
-                    <img class="logoer" id="facelogo" src="./logoer/face.png">
-                    <img class="logoer" id="twitterlogo" src="./logoer/twitt.png">
-                    <img class="logoer" id="instalogo" src="./logoer/insta.png">
-                    <div id="footertext">&copy;2017 Laget av Grupp 32</div>
+                     &copy;2017 Laget av Grupp 13 
                 </footer>
+            </div>
 
-        <!---/div> <!--- #wrapper lukker --->
+        </div>
     </body>
 </html>
