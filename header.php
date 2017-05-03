@@ -12,82 +12,46 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="">
         <meta name="author" content="">
-        <link rel="stylesheet" href="normalize.css" / >
+          <link rel="stylesheet" href="normalize.css" />
         <link rel="stylesheet" href="main.css" />
         <link rel="icon" href="logo1.png" />
         <title>WestGuide</title>
     </head>
 
     <body>
-        <a href="user.php"><div id="hidden-link"></div></a>
-        <!---div id="wrapper"--->
+        <div id="wrapper">
             <header>
 
                 <a href="index.php">
                     <img id="logo" src="./logoer/logo-klipt.png" width="400px">
                 </a>
 
+
+
             </header>
-          
-            <div id="box">         
-                <nav>
-                    <ul>
-                        <li>
-                            <!---a href="index.php">hjem</a---> <!--- Må linkes til siden, men å legge linken rundt teksten gjør bare teksten klikkbar, og å legge lingen rundt <li> ødelegger layout --->
-                            hjem
-                        </li>
-                        <li>
-                            <a href="aktivitet.php">aktiviteter</a>
-                            <ul class="drop-menu menu-#{i}">
-                                <li>uno</li>
-                                <li>dos</li>
-                                <li>tres</li>
-                                <li>cuatro</li>
-                                <li>cinco</li>
-                                <li>seis</li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="mat.php">mat</a>
-                            <ul class="drop-menu menu-#{i}">
-                                <li>uno</li>
-                                <li>dos</li>
-                                <li>tres</li>
-                                <li>cuatro</li>
-                                <li>cinco</li>
-                                <li>seis</li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="kultur.php">kultur</a>
-                            <ul class="drop-menu menu-#{i}">
-                                <li>uno</li>
-                                <li>dos</li>
-                                <li>tres</li>
-                                <li>cuatro</li>
-                                <li>cinco</li>
-                                <li>seis</li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="skole.php">skole</a>
-                            <ul class="drop-menu menu-#{i}">
-                                <li>uno</li>
-                                <li>dos</li>
-                                <li>tres</li>
-                                <li>cuatro</li>
-                                <li>cinco</li>
-                                <li>seis</li>
-                            </ul>
-                        </li>
-                        <li>
-                            <!--- Søkefunksjon start --->
-                            <!--- Kan bare søke etter id og tags --->
-                            <form action="search-results.php" method="GET">
-                                <input id="search-field" name="search" type="text" placeholder="Sok etter...">
-                                <input id="search-button" type="submit" value="Sok">
-                            </form>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
+            <img class="logoer" id="facelogo" src="./logoer/facebook-logo.png">
+            <img class="logoer" id="twitterlogo" src="./logoer/twitter-logo.png">
+            <img class="logoer" id="instalogo" src="./logoer/instagrom-logo.png">
+
+            <nav>
+                <ul>
+                   <li><a href="index.php">HJEM</li> 
+                       
+                    <li><a href="kultur.php">KULTUR</a>
+
+
+
+
+                        <ul>
+                            <li><a href="#">Kunst</a></li>
+                            <li><a href="#">Historie</a></li>
+                            <li><a href="#">Utstilling</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="aktivitet.php">AKTIVITET</a></li>
+                    <!--<li><a href="mat.php">MAT</a></li> -->
+                    <li><a href="skole.php">SKOLE</a></li>
+                    <li><a href="testside.php">TEST-SIDE</a></li>
+                    <!-- <li><a href="new-test.php">ADD</a></li> -->
+                </ul>
+            </nav>
