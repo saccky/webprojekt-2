@@ -32,4 +32,4 @@ av
         <a id="article-event-link" href="article-event.php?id=<?= $event['article_event_fk'] ?>">
             <button class="article-event-link-btn" type="button"> Se Hendelsen </button>
         </a>
-<?php } ?>
+    <?php } ?>

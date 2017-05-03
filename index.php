@@ -6,41 +6,40 @@
     require 'connection-footer.php';
     require 'header.php';
 ?>
-<br>
 
-<div class="box">
+    <br>
 
-<!--- Slideshow start --->
-<!--- legg til bilder som skal vises på forsiden her --->
-<div id="SlidesContainer">
-    <img class="Slides" src="Bilder-Skole/westerdals_bygning_01-1-ekempel.jpg">
-    <img class="Slides" src="Bilder-Mat/mathallen-andre-etasje-side.jpg">
-    <img class="Slides" src="Bilder-Mat/mathallen.jpg">
-    <img class="Slides" src="Bilder-Aktivitet/akerselven-fjerdingen.jpg">
-    <img class="Slides" src="Bilder-Skole/campus-fjerdingen.jpg">
-</div>
+    <!--- Slideshow start --->
+    <!--- legg til bilder som skal vises på forsiden her --->
+    <div id="SlidesContainer">
+        <img class="Slides" src="Bilder-Skole/westerdals_bygning_01-1-ekempel.jpg">
+        <img class="Slides" src="Bilder-Mat/mathallen-andre-etasje-side.jpg">
+        <img class="Slides" src="Bilder-Mat/mathallen.jpg">
+        <img class="Slides" src="Bilder-Aktivitet/akerselven-fjerdingen.jpg">
+        <img class="Slides" src="Bilder-Skole/campus-fjerdingen.jpg">
+    </div>
 
-<?php 
+    <?php 
         require 'slideshow.php'; 
     ?>
 
-<br>
+    <br>
 
-<div class="artikel1">
-    <article>
+    <div class="artikel1">
+        <article>
 
-        <!--- Printer alle artikler --->
-        <?php foreach ($events as $event) 
+            <!--- Printer alle artikler --->
+            <?php foreach ($events as $event) 
             {
                 require 'article.php';
                 ?>
-        <hr>
-        <br>
-        <?php  } ?>
+             <hr>
+                <br>
+            <?php  } ?>
 
-    </article>
-</div>
-</div>
+        </article>
+    </div>
+
 <?php 
     require 'footer.php'; 
 ?>
