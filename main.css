@@ -1,21 +1,39 @@
 body {
-    background-color: white;
+   /* background-color: white;*/
     font-family: Arial, Verdana, Comic Sans;
     text-align: left;
     font-size: 1em;
     line-height: 1.5;
     /*position: relative; */
-    padding: 0px;
-    margin: auto 10%;
+  /*  padding: 0px;
+    margin: auto 10%; */
 }
 /* wrapper deaktivert i header.php OOPS: zoom med/uten wrapper */
-#wrapper {
-    width: 980px;
+.box {
+    width: 70%;
     text-align: left;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
     background-color: #FFFFFF;
 }
+
+.main-header{
+    background: black;
+        padding: 2.8em 0;
+    text-align: center;
+    margin-top: 0;
+}
+
+.name{
+    margin-top: 0;
+}
+
+a:link, a:visited{
+    
+    text-decoration: none;
+    color: white;
+}
+
+
 #hidden-link /* Div for link til user.php, aka. login/admin */
 {
     position: fixed;
@@ -54,8 +72,8 @@ nav > ul > li {
     width: 16.666667%; /* 5 elementer i navbaren = 20% */
     padding-left: 0;
     padding-right: 0;
-    height: 65px;
-    line-height: 65px;
+    height: 45px;
+    line-height: 45px;
     position: relative;
     text-transform: uppercase;
     text-align: center;
@@ -65,14 +83,10 @@ nav > ul > li {
 }
 nav > ul > li:hover {
     background: #777;
-    color: orange;
 /*  border-radius: 0px;*/
 }
 nav > ul > a:hover {
     background: #777;
-    color: orange;
-    text-emphasis-color: orange;
-    text-decoration-color: orange;
 /*  border-radius: 0px;*/
 }
 ul.drop-menu {
@@ -104,18 +118,14 @@ li:hover > ul.drop-menu li {
 
 
 /* Footer */
-    .mainFooter {
+ /*   .mainFooter {
     margin-top: 100px;
     background-color: black;
     color: white;
-}
-footer {
-    float: center;
-    clear: both;
-    top: 100px;
-    right: 400px;
+} */
+.main-footer {
     text-align: center;
-    padding: 30px;
+    padding: 2em 0;
     background-color: black;
 }
 #footertext{

@@ -6,8 +6,8 @@
     require 'connection-footer.php';
     require 'header.php';
 ?>
-
-    <br>
+<div class="box">
+    
 
     <!--- Slideshow start --->
     <!--- legg til bilder som skal vises på forsiden her --->
@@ -39,7 +39,7 @@
 
         </article>
     </div>
-
+</div>
 <?php 
     require 'footer.php'; 
 ?>

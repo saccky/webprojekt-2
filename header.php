@@ -21,15 +21,16 @@
     <body>
         <a href="user.php"><div id="hidden-link"></div></a>
         <!---div id="wrapper"--->
-            <header>
+            <header class="main-header">
 
-                <a href="index.php">
+                <h1 class="name"><a href="#">WestGuide</a></h1>
+            <!---    <a href="index.php">
                     <img id="logo" src="./logoer/logo-klipt.png" width="400px">
                 </a>
-
-            </header>
+                        -->
+            
           
-            <div id="box">         
+            <div class="box">         
                 <nav>
                     <ul>
                         <li>
@@ -91,3 +92,4 @@
                     </ul>
                 </nav>
             </div>
+                </header>
