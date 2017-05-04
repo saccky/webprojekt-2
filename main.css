@@ -1,21 +1,39 @@
+/*********************************
+**********************************
+            BODY
+**********************************
+*********************************/
+
 body {
-   /* background-color: white;*/
     font-family: Arial, Verdana, Comic Sans;
     text-align: left;
     font-size: 1em;
     line-height: 1.5;
     margin: 0;
-    /*position: relative; */
-  /*  padding: 0px;
-    margin: auto 10%; */
-}
+ }
 /* wrapper deaktivert i header.php OOPS: zoom med/uten wrapper */
+
+/* Här ligger de olika basdelarna */
 .box {
     width: 70%;
     text-align: left;
     margin: 0 auto;
     background-color: #FFFFFF;
 }
+
+/********************************
+********************************/
+
+
+
+
+
+
+/*********************************
+**********************************
+            HEADER
+**********************************
+*********************************/
 
 .main-header{
     background: black;
@@ -24,14 +42,10 @@ body {
     margin-top: 0;
 }
 
+/* Titeln */
 .name{
     margin-top: 0;
 }
-
-a{
-    display: block;
-}
-
 
 header a:link {
     text-decoration: none;
@@ -51,17 +65,20 @@ header a:visited {
     right: 1px;
 }
 
-/* NAV BAR */
+/********************************
+********************************/
 
-/*#box{
-    width: 100%;
-    margin-left: 0;
-    margin-right: 0;
-    display: inline-block;
-    background: #000; 
-    /*border-radius: 5px;*/
 
-/*}*/
+
+
+
+
+/*********************************
+**********************************
+        NAVIGATION BAR
+**********************************
+*********************************/
+
 nav > ul {
     float: left;
     list-style: none;
@@ -73,10 +90,7 @@ nav > ul {
     /*border-radius: 5px;*/
     
 }
-#search-field
-{
-    width: 102.3px; 
-}
+
 nav > ul > li {
     float: left;
     list-style: inline-block;
@@ -92,14 +106,15 @@ nav > ul > li {
     color: #FFF/*rgba(255,255,255, 0.9)*/;
     cursor: pointer;
 }
+
+
+/** Dropdown - meny **/
+
+
 nav > ul > li:hover {
     background: #777;
-/*  border-radius: 0px;*/
 }
-nav > ul > a:hover {
-    background: #777;
-/*  border-radius: 0px;*/
-}
+
 ul.drop-menu {
     position: absolute;
     top: 100%;
@@ -127,16 +142,52 @@ li:hover > ul.drop-menu li {
     display: block;
 }
 
+
+/** LINK **/
+a{
+    display: block;
+}
+
+nav > ul > a:hover {
+    background: #777;
+}
+
+
+
+/********************************
+********************************/
+
+
+
+/*********************************
+**********************************
+        SEARCH BAR
+**********************************
+*********************************/
+
+
+#search-field
+{
+    width: 102.3px; 
+}
+
 #search:hover{
     
     background: #000;
 }
-/* Footer */
- /*   .mainFooter {
-    margin-top: 100px;
-    background-color: black;
-    color: white;
-} */
+
+
+/********************************
+********************************/
+
+
+
+/*********************************
+**********************************
+            FOOTER 
+**********************************
+*********************************/
+
 .main-footer {
     text-align: center;
     padding: 2em 0;
@@ -145,68 +196,20 @@ li:hover > ul.drop-menu li {
 #footertext{
     color: white;
 }
-/*
-ul{
-    display: block;
-    list-style-type: none;
-    padding-top: -45px;
-    margin: 0;
-    overflow: hidden;
-    background-color: black;
-}
-li{
-    display: inline-block;
-    float: left;
-    margin-left: 10px;
-    margin-left: 100px;
-    max-width: 200px;
-    padding-left: 0px;
-    max-width: 200px;
-    max-height: 50px;
-    text-align: center;
-} 
-li a {
-    display: block;
-    color: white;
-    margin: auto;
 
-    text-align: center;
-    padding: 10px 30px;
-    text-decoration: none;
-}
-li a:hover {
-    color: grey;
-    text-decoration: none;
-}
-ul li {
-    display: inline;
-    text-decoration: none;
-}
-ul li:hover {
-    background: #333;
-}
-ul li:hover ul {
-    display: block;
-    padding: auto;
-    align-content: center;
-}
-ul li ul {
-    position: absolute;
-    width: 95px;
-    display: none;
-}
-ul li ul li {
-    display: block;
-}
-ul li ul li:hover {
-    text-decoration: underline;
-}
-ul li ul li a {
-    display: block;
-}
-*/
 
-/* Sociala Medier */
+/********************************
+********************************/
+
+
+
+
+/*********************************
+**********************************
+        SOCIALA MEDIER 
+**********************************
+*********************************/
+
 .logoer{
     width: 40px;
     height: 40px;
@@ -217,39 +220,19 @@ ul li ul li a {
     max-width: 400px;
     margin: 0 auto;
 }
-/*
-#facelogo {
-    width: 50px;
-    right: 390px;
-}
 
-#twitterlogo {
-    width: 30px;
-    right: 350px;
-}
+/********************************
+********************************/
 
-#instalogo {
-    width: 30px;
-    right: 300px;
-}
-*/
 
-/* Hovedinnhold */
-/*.sideContent
-{
-    float: right;
-    margin: 0 1.5%;
-    width: 30%;
-        
-}*/
-.mainContent {
-    margin: 0 100px;
-    width: 30%;
-    text-align: left;
-    display: inline-block;
-    padding: 100px;
-    align-content: center;
-}
+
+/*********************************
+**********************************
+            ARTIKLAR
+**********************************
+*********************************/
+
+
 p {
     margin-bottom: 40px;
 }
@@ -277,7 +260,18 @@ hr {
     margin: 0 10px 10px 0;
 }
 
-/* Slideshow */
+/********************************
+********************************/
+
+
+
+
+/*********************************
+**********************************
+            SLIDESHOW
+**********************************
+*********************************/
+
 
 .SlideShow {
     width: 100%;
@@ -317,7 +311,19 @@ hr {
 }
 */
 
-/* Event card */
+
+/********************************
+********************************/
+
+
+
+
+/*********************************
+**********************************
+            EVENTCARD
+**********************************
+*********************************/
+
 
 #EventWrapper {
     width: 50%;
@@ -350,3 +356,6 @@ hr {
     border-radius: 0.3em;
     border: none;
 }
+
+/********************************
+********************************/
