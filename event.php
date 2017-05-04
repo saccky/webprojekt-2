@@ -8,9 +8,11 @@
         <img class="event_image" width="300" height="200" src="<?= $event['event_image_path'] ?>">
 
         <h2><?= $event['event_title'] ?></h2> 
+        
         <a class="av" href="<?= $event['event_where_link'] ?>" target="_blank">
             <?= $event['event_where'] ?>
-        </a>
+        </a>,
+        <?= $event['event_datetime'] ?>
 
         <p>
             <?= $event['event_body'] ?>

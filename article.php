@@ -6,6 +6,7 @@
 <div class="article-shadow">
     <div class="article-container">
         <a href="<?= $event['article_link'] ?>" target="_blank"><?= $event['article_link_name'] ?></a>
+        Sist oppdatert <?= $event['article_datetime'] ?>
         <h2><?= $event['article_title'] ?></h2>
         <img class="me" width="200" src="<?= $event['article_image_path'] ?>">
         av 

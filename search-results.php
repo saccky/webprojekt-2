@@ -19,40 +19,40 @@
     }
     require 'header.php';
 ?>
+<div class="box">
+    <h1> Viser tag/id resultater for: <?= $getsearch ?> </h1>
 
-<h1> Viser tag/id resultater for: <?= $getsearch ?> </h1>
-
-<hr>
-
-<?php
-    echo "Artikler: <br>"; //Kan gjøres i HTML, bare husk ? > (uten mellomrom) for å lukke php tag, og < ?php for å starte igjen
-    foreach ($events2 as $event) 
-    {   
-        require 'article.php';
-    }
-    /*
-    if($rows2 < 1) //Virker ikke :/
-    {
-        echo "Beklager, vi fant ingen artikler :/ <br>";
-    }
-    */
-?>
-
-<br>
-<hr>
+    <br>
 
 <?php
-    
-    echo "Hendelser: <br>";
-    foreach ($events as $event) 
-    {
-        require 'event.php';
-    }
+        echo "Artikler: <br>"; //Kan gjøres i HTML, bare husk ? > (uten mellomrom) for å lukke php tag, og < ?php for å starte igjen
+        foreach ($events2 as $event) 
+        {   
+            require 'article.php';
+        }
+        /*
+        if($rows2 < 1) //Virker ikke :/
+        {
+            echo "Beklager, vi fant ingen artikler :/ <br>";
+        }
+        */
 ?>
 
-<br>
-<hr>
+    <br>
+    <hr>
 
 <?php
-    require 'footer.php';
+
+        echo "Hendelser: <br>";
+        foreach ($events as $event) 
+        {
+            require 'event.php';
 ?>
+            <br>
+<?php } ?>
+        
+</div>
+
+    <?php
+        require 'footer.php';
+    ?>

@@ -5,13 +5,17 @@
     require 'header.php';
 ?>
 
-<h1> Viser hendelser tilknyttet artikkel "<?= $event['id'] ?>" </h1> <!--- Virker ikke --->
+<div class="box">
+    <h1> Viser hendelser tilknyttet artikkel "<?= $event['id'] ?>" </h1> <!--- Virker ikke --->
 
 <?php
     foreach ($events as $event) 
     {  
         require 'event.php';
-    }
+    }?>
+    
+</div>
 
-    require 'footer.php';
+<?php
+        require 'footer.php';
 ?>

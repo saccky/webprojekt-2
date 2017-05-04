@@ -4,6 +4,10 @@
     require 'connection-footer.php';
     require 'header.php';
 
+?>
+    <div class="box">
+<?php
+
     foreach ($events as $event) //Unødvendig, annen måte i hente verdier som blir endret til "$event" her?
     {    
 ?>
@@ -23,6 +27,7 @@
                         <input class="" type="text" id="edit-where-link" name="edit-where-link" value="<?= $event['event_where_link'] ?>">
                         <label class="">Link til hvor (null)</label>
                     </div>
+                    <!--- datetime --->
                     <div class="">
                         <textarea class="" type="text" rows= "10" id="edit-body" name="edit-body">
                             <?= $event['event_body']?>
@@ -44,7 +49,7 @@
                 </form>
             </div>
         </main>
-
+    </div>
 <?php
     }
 
