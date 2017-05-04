@@ -5,16 +5,16 @@
 <!---Artikkel start --->
 <div class="article-shadow">
     <div class="article-container">
-        <a href="<?= $event['article-link'] ?>" target="_blank"><?= $event['article-link-name'] ?></a>
-        <h2><?= $event['article-title'] ?></h2>
-                <img class="me" width="200" src="<?= $event['article-image-path'] ?>">
+        <a href="<?= $event['article_link'] ?>" target="_blank"><?= $event['article_link_name'] ?></a>
+        <h2><?= $event['article_title'] ?></h2>
+                <img class="me" width="200" src="<?= $event['article_image_path'] ?>">
         av 
-        <a class="av" href="<?= $event['article-author-link'] ?>" target="_blank">
-    <?= $event['article-author'] ?>
+        <a class="av" href="<?= $event['article_author_link'] ?>" target="_blank">
+    <?= $event['article_author'] ?>
 </a>
 
 <p>
-    <?= $event['article-body'] ?>
+    <?= $event['article_body'] ?>
 </p>
 
 <?php
@@ -28,9 +28,9 @@
 
 <?php
     //hvis fremmednøkkelen er true (ikke er null), legg til knapp
-    if($event['article-event-fk']) 
+    if($event['article_event_fk']) 
     { ?>
-        <a id="article-event-link" href="article-event.php?id=<?= $event['article-event-fk'] ?>">
+        <a id="article-event-link" href="article-event.php?id=<?= $event['article_event_fk'] ?>">
             <button class="article-btn" type="button"> Se Hendelsen </button>
         </a>
     <?php } ?>
