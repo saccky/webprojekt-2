@@ -7,7 +7,7 @@
     <img class="event_image" width="300" height="200" src="<?= $event['event_image_path'] ?>">
 
     <h2><?= $event['event_title'] ?></h2> 
-    <a class="event-hvor" href="<?= $event['event_where_link'] ?>" target="_blank">
+    <a class="av" href="<?= $event['event_where_link'] ?>" target="_blank">
         <?= $event['event_where'] ?>
     </a>
 

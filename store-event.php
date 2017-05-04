@@ -13,7 +13,7 @@
     //id, event-title, event-where, event-where-link, event-image-path, event-body, tag 
     $statement = $connection->prepare('INSERT INTO events 
     VALUES (NULL, 
-    "'.$_POST['new-title'].'", 
+    "'.$_POST['new-title'].'",
     "'.$_POST['new-where'].'", 
     "'.$_POST['new-where-link'].'", 
     "'.$_POST['new-image-path'].'", 

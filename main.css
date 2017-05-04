@@ -28,15 +28,16 @@ body {
     margin-top: 0;
 }
 
-a:link, a:visited{
-    
+header a:link {
+    text-decoration: none;
+    color: white;
+}
+header a:visited {
     text-decoration: none;
     color: white;
 }
 
-
-#hidden-link /* Div for link til user.php, aka. login/admin */
-{
+#hidden-link /* Div for link til user.php, aka. login/admin */ {
     position: fixed;
     width: 100px;
     height: 100px;
@@ -69,7 +70,6 @@ nav > ul {
 }
 #search-field
 {
-    
     width: 102.3px; 
 }
 nav > ul > li {

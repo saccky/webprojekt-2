@@ -2,6 +2,7 @@
     require 'header.php' 
 ?>
 
+<br>
 <main class="form-new">
 	<div class="">
 	  	<form class="" action="store-event.php" method="post">
