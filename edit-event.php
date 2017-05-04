@@ -24,7 +24,8 @@
                         <label class="">Link til hvor (null)</label>
                     </div>
                     <div class="">
-                        <textarea class="" type="text" rows= "10" id="edit-body" name="edit-body" value="<?= $event['event_body'] //Printes ikke - textarea? ?>"> 
+                        <textarea class="" type="text" rows= "10" id="edit-body" name="edit-body">
+                            <?= $event['event_body']?>
                         </textarea>
                         <label class="" for="body">Body</label>
                     </div>

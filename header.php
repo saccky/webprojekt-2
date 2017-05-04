@@ -23,7 +23,7 @@
         <!---div id="wrapper"--->
             <header class="main-header">
 
-                <h1 class="name"><a href="#">WestGuide</a></h1>
+                <h1 class="name"><a href="index.php">WestGuide</a></h1>
             <!---    <a href="index.php">
                     <img id="logo" src="./logoer/logo-klipt.png" width="400px">
                 </a>
@@ -35,7 +35,7 @@
                     <ul>
                         <li>
                             <!---a href="index.php">hjem</a---> <!--- Må linkes til siden, men å legge linken rundt teksten gjør bare teksten klikkbar, og å legge lingen rundt <li> ødelegger layout --->
-                            hjem
+                            <a href="index.php">hjem</a>
                         </li>
                         <li>
                             <a href="aktivitet.php">aktiviteter</a>

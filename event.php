@@ -21,10 +21,10 @@
     { ?>
         <!--- Sletteknapp --->
         <a class="event-delete-class" href="delete-event.php?id=<?= $event['id'] ?>">
-            <button class="event-delete-btn" type="button"> Slett Event </button>
+            <button class="event-btn" type="button"> Slett Event </button>
         </a>
         <!--- Editknapp --->
         <a class="event-edit-class" href="edit-event.php?id=<?= $event['id'] ?>">
-            <button class="event-edit-btn" type="button"> Endre Event </button>
+            <button class="event-btn" type="button"> Endre Event </button>
         </a>
     <?php } ?>

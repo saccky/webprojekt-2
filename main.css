@@ -338,7 +338,7 @@ hr {
     color: black;
 }
 
-.article-btn {
+.article-btn, .event-btn {
     background-color: black;
     color: white;
     padding: 1em;

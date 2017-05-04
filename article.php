@@ -22,7 +22,7 @@
     { ?>
         <!--- Sletteknapp --->
         <a class="article-delete-class" href="delete-article.php?id=<?= $event['id'] ?>">
-            <button class="article-delete-btn" type="button"> Slett Artikkel </button>
+            <button class="article-btn" type="button"> Slett Artikkel </button>
         </a>
     <?php } ?>
 
