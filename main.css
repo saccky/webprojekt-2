@@ -279,6 +279,7 @@ hr {
     margin-right: auto;
 }
 .Slides {
+    max-height: 450px;
     height: auto ;/*481px;*/ /* Gör att bilden hamnar i storlek utifrån hur stor sidan är*/
     max-width: 100%;
     margin-left: auto;
