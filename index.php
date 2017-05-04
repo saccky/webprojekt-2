@@ -33,6 +33,7 @@
             {
                 require 'article.php';
                 ?>
+                <br>
              <hr>
                 <br>
             <?php  } ?>
