@@ -4,13 +4,12 @@
 
 <!---Artikkel start --->
 <div class="article-shadow">
-        <img class="me" width="200" src="<?= $event['article-image-path'] ?>">
-    <div class="container">
-<a href="<?= $event['article-link'] ?>" target="_blank"><?= $event['article-link-name'] ?></a>
-
-<h2><?= $event['article-title'] ?></h2>
-av 
-<a class="av" href="<?= $event['article-author-link'] ?>" target="_blank">
+    <div class="article-container">
+        <a href="<?= $event['article-link'] ?>" target="_blank"><?= $event['article-link-name'] ?></a>
+        <h2><?= $event['article-title'] ?></h2>
+                <img class="me" width="200" src="<?= $event['article-image-path'] ?>">
+        av 
+        <a class="av" href="<?= $event['article-author-link'] ?>" target="_blank">
     <?= $event['article-author'] ?>
 </a>
 

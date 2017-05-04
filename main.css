@@ -323,3 +323,19 @@ hr {
     transition: 0.3s;
     border-radius: 5px;
 }
+    
+.article-container {
+    padding: 0em 0.5em 0.5em 1em;   
+}
+
+.av{
+    color: black;
+}
+
+.article-btn {
+    background-color: black;
+    color: white;
+    padding: 1em;
+    border-radius: 0.3em;
+    border: none;
+}
