@@ -6,6 +6,9 @@
     require 'connection-footer.php';
     require 'header.php';
 ?>
+
+<br>
+<br>
 <div class="box">
     
 

@@ -45,6 +45,8 @@ body {
 /* Titeln */
 .name{
     margin-top: 0;
+    font-size: 3em;
+    letter-spacing: 1px;
 }
 
 header a:link {
