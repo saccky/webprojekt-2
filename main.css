@@ -28,6 +28,11 @@ body {
     margin-top: 0;
 }
 
+a{
+    display: block;
+}
+
+
 header a:link {
     text-decoration: none;
     color: white;
