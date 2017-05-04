@@ -7,7 +7,7 @@
     foreach ($events as $event) //Unødvendig, annen måte i hente verdier som blir endret til "$event" her?
     {    
 ?>
-
+        <br>
         <main class="form-edit">
             <div class="">
                 <form class="" action="update-event.php" method="post">
