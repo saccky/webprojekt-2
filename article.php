@@ -3,6 +3,7 @@
 ?>
 
 <!---Artikkel start --->
+<div class="article-shadow">
 <a href="<?= $event['article_link'] ?>" target="_blank"><?= $event['article_link_name'] ?></a>
 
 <h2><?= $event['article_title'] ?></h2>
@@ -33,3 +34,4 @@ av
             <button class="article-event-link-btn" type="button"> Se Hendelsen </button>
         </a>
     <?php } ?>
+</div>

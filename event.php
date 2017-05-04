@@ -3,7 +3,7 @@
 ?>
 
 <!--- Event start --->
-<div id="EventWrapper">
+<div class="article-shadow">
     <img class="event_image" width="300" height="200" src="<?= $event['event_image_path'] ?>">
 
     <h2><?= $event['event_title'] ?></h2> 
