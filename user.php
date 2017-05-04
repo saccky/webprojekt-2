@@ -1,7 +1,10 @@
 <?php
     session_start(); //Starter session
     require 'header.php';
+?>
 
+<div class="box">
+<?php
     //Henter brukernavn og passord fra login-feltene
     $user = $_GET['login-user'];
     $pass = $_GET['login-pass'];
@@ -39,6 +42,7 @@
     if(!isset($_SESSION['use'])) //Hvis det ikke er en session i bruk, login
     { 
 ?>
+
         <h1>Logg inn</h1>
         <!--- Login --->
         <!--- Merk: "Login" er brukt litt liberalt her, og passord kan være synlig i url, samt at det ikke er noen scrubbing av input-data. Med andre ord er det ingen sikkerhet i det hele tatt. --->
@@ -62,5 +66,8 @@
             }
         }
     }
+?>
+</div>
+<?php
     require 'footer.php';
 ?>

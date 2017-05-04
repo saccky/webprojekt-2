@@ -6,6 +6,7 @@
     require 'connection-footer.php';
     require 'header.php';
 ?>
+<div class="box">
 
     <h1>AKTIVITET</h1>
     <!--- Printer alle events med tag = kultur --->
@@ -17,6 +18,8 @@
             <hr>
             <br>
         <?php  } ?>
+</div>    
+    
 <?php
     require 'footer.php';
 ?>
