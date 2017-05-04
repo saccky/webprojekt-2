@@ -67,6 +67,11 @@ nav > ul {
     /*border-radius: 5px;*/
     
 }
+#search-field
+{
+    
+    width: 102.3px; 
+}
 nav > ul > li {
     float: left;
     list-style: inline-block;
