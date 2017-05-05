@@ -2,6 +2,7 @@
 <?php
     require 'header.php'
 ?>
+    <br>
 <div class="box">
 
 <h1>Skole</h1>
@@ -14,6 +15,7 @@
 https://www.youtube.com/watch?v=dTdR75pGdO4&feature=youtu.be" target="_blank">Kanban video - YouTube</a>
 </div>
     </div>
+<br>
 <?php
     require 'footer.php'
 ?>

@@ -7,6 +7,7 @@
     require 'connection-footer.php';
     require 'header.php';
 ?>
+    <br>
 <div class="box">
 
     <h1>AKTIVITET</h1>
@@ -20,7 +21,8 @@
             <br>
         <?php  } ?>
 </div>    
-</div>    
+</div> 
+<br>
 <?php
     require 'footer.php';
 ?>
