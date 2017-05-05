@@ -45,6 +45,8 @@ body {
 /* Titeln */
 .name{
     margin-top: 0;
+    font-size: 3em;
+    letter-spacing: 1px;
 }
 
 header a:link {
@@ -197,6 +199,11 @@ nav > ul > a:hover {
     color: white;
 }
 
+/** Gör att footern stannar i botten **/
+.wrap{
+    
+    min-height: calc(100vh - 135px);
+}
 
 /********************************
 ********************************/

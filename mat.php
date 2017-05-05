@@ -1,3 +1,4 @@
+<div class="wrap">
 <?php
     require 'connection-header.php';
     /* Kode for spesefik spørring etter events med tag "kultur" (Ikke CAPS-sensetiv) */
@@ -18,7 +19,8 @@
             <hr>
             <br>
         <?php  } ?>
-</div>    
+</div>
+    </div>
 <?php
     require 'footer.php';
 ?>

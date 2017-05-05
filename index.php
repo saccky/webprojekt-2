@@ -1,3 +1,4 @@
+
 <?php   
     session_start();
     require 'connection-header.php';
@@ -6,6 +7,9 @@
     require 'connection-footer.php';
     require 'header.php';
 ?>
+<div class="wrap">
+<br>
+<br>
 <div class="box">
     
 
@@ -41,6 +45,7 @@
         </article>
     </div>
 </div>
+    </div>
 <?php 
     require 'footer.php'; 
 ?>
