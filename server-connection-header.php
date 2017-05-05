@@ -8,4 +8,9 @@ $username = 'garale16_admin'; //Brukernavn i cPanel
 $password = 'GA16AdminPassord'; //Passord for bruker i cPanel   
 $name = 'garale16_westguide'; //[westerdals-brukernavnet]_[Databasenavn]
 
-$connection = new PDO("mysql:host=tek.westerdals.no;dbname={$name};port={$port}", $username, $password); //Uendret
+$connection = new PDO("mysql:host=$host;dbname={$name};port={$port}", $username, $password); //Uendret
+
+//Evt scrubbing //MySQLi gjorde sidene veldig mye tregere, brukes ikke midlertidig
+//$mysqlicon = mysqli_connect($host, $username, $password, $name);
+//Senere, hvor f.eks $getsearch brukes
+//$sansearch = mysqli_real_escape_string($connection, $getsearch);
