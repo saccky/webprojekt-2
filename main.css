@@ -66,6 +66,7 @@ header a:visited {
 *********************************/
 
 nav > ul {
+    display: flex;
     float: left;
     list-style: none;
     padding: 0;
@@ -78,11 +79,14 @@ nav > ul {
 }
 
 nav > ul > li {
+    flex: 1 1 100%;
+    flex-wrap: wrap;
+    justify-content: space-around;
     float: left;
     list-style: inline-block;
-    width: 16.666667%; /* 5 elementer i navbaren = 20% */
-    padding-left: 0;
-    padding-right: 0;
+   /* width: 16.666667%; /* 5 elementer i navbaren = 20% */
+    padding-left: 10px;
+    padding-right: 10px;
     height: 45px;
     line-height: 45px;
     position: relative;
@@ -147,7 +151,9 @@ nav > ul > a:hover {
 
 #search-field
 {
-    width: 102.3px; 
+    width: 85.7px; 
+    padding-left: 0;
+    padding-right: 0;
 }
 
 #search:hover{
@@ -316,4 +322,47 @@ hr {
     padding: 1em;
     border-radius: 0.3em;
     border: none;
+}
+/*********************************
+**********************************
+            MOBIL SKÄRM
+**********************************
+*********************************/
+
+@media only screen and (max-width: 600px) {
+    #search-field, #search-button {
+        display: none;
+    }
+    
+    .container{
+    flex-direction: column;
+    
+}
+}
+
+/********************************
+********************************/
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+
+.item-1{
+max-width:  500px;
+    height: 400px;
+}
+
+.item a{
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+    
+}
+
+.item a:hover{
+    color: grey;
+    text-decoration: underline;
 }

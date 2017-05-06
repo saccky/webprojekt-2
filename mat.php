@@ -8,7 +8,6 @@
 
 <div class="wrap">
     <div class="box">
-
         <h1>MAT</h1>
         <?php 
             foreach ($events as $event) 

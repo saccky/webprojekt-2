@@ -8,14 +8,13 @@
     
 <div class="wrap">
     <div class="box">
-
         <h1>KULTUR</h1>
         <?php 
-            foreach ($events as $event) 
-            {  
-                require 'event.php';
-                echo "<br>";
-            } ?>
+        foreach ($events as $event) 
+        {  
+            require 'event.php';
+            echo "<br>";
+        } ?>
     </div>
 </div>
 
