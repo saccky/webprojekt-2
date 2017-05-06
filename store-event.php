@@ -15,7 +15,7 @@
     VALUES (NULL, 
     "'.$_POST['new-title'].'",
     "'.$_POST['new-where'].'",
-    NULL,
+    "'.$_POST['new-datetime'].'",
     "'.$_POST['new-where-link'].'", 
     "'.$_POST['new-image-path'].'", 
     "'.$_POST['new-body'].'", 

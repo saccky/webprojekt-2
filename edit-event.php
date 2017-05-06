@@ -27,7 +27,10 @@
                         <input class="" type="text" id="edit-where-link" name="edit-where-link" value="<?= $event['event_where_link'] ?>">
                         <label class="">Link til hvor (null)</label>
                     </div>
-                    <!--- datetime --->
+                    <div class="">
+                        <input class="" type="datetime" id="edit-datetime" name="edit-datetime" value="<?= $event['event_datetime'] ?>">
+                        <label class="">Naar</label>
+                    </div>
                     <div class="">
                         <textarea class="" type="text" rows= "10" id="edit-body" name="edit-body">
                             <?= $event['event_body']?>
@@ -39,7 +42,13 @@
                         <label class="">Bilde-URL</label>
                     </div>
                     <div class="">
-                        <input class="" type="text" id="edit-tag" name="edit-tag" value="<?= $event['tag'] ?>">
+                        <select id="edit-tag" name="edit-tag"> <!--- Viser en liste med tags --->
+                            <option value="<?= $event['tag'] ?>"><?= $event['tag'] ?></option> <!--- Viser nåværende verdi --->
+                            <option value="aktivitet">Aktivitet</option>
+                            <option value="mat">Mat</option>
+                            <option value="kultur">Kultur</option>
+                            <option value="skole">Skole</option>
+                        </select>
                         <label class="">Tag</label>
                     </div>
                     <button class="">

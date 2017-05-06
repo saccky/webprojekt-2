@@ -6,7 +6,8 @@
     $statement = $connection->prepare('UPDATE events SET
     event_title = "'.$_POST['edit-title'].'", 
     event_where = "'.$_POST['edit-where'].'",
-    event_where_link = "'.$_POST['edit-where-link'].'", 
+    event_where_link = "'.$_POST['edit-where-link'].'",
+    event_datetime = "'.$_POST['edit-datetime'].'", 
     event_image_path = "'.$_POST['edit-image-path'].'", 
     event_body = "'.$_POST['edit-body'].'", 
     tag = "'.$_POST['edit-tag'].'"
