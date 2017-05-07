@@ -47,7 +47,7 @@
                             <option value="kultur">Kultur</option>
                             <option value="skole">Skole</option>
                         </select>
-                        <label class="">Tag*</label>
+                        <label class="">Kategori*</label>
                     </div>
                     <button class="" onclick="checkInput()">
                         Lagre
