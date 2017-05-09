@@ -375,32 +375,59 @@ hr {
 
 /********************************
 ********************************/
+            MOBIL SKÄRM
 
 /*********************************
-**********************************
-            MOBIL SKÄRM
-**********************************
-*********************************/
-
+**********************************/
 @media only screen and (max-width: 600px) {
+   
     #search-field, #search-button {
         display: none;
     }
-    
     .container{
     flex-direction: column;
     
+    }
+    
+    .profilinfo img{
+            
+            margin-right: 10px;
+        }
+    
+    #hidden-link{
+        display: none;
+    }
+    
+    #search{
+        
+        display: none;
+    }
+
 }
-}
+
 
 /********************************
 ********************************/
 
+
+
+
+
+
+/*********************************
+**********************************
+    PROJEKT INFORMATION + LÄNK
+**********************************
+*********************************/
+
+
+
 .container{
+    flex-direction: row;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    
+
 }
 
 .item-1{
@@ -408,14 +435,75 @@ max-width:  500px;
     height: 400px;
 }
 
+.item-2{
+    margin-top: 20px;
+    max-width:  500px;
+    height: 400px;
+}
+
 .item a{
     font-weight: bold;
     color: black;
-    text-decoration: none;
-    
+ max-width:  500px;
 }
 
 .item a:hover{
     color: grey;
     text-decoration: underline;
+    
+    
+
 }
+
+/********************************
+********************************/
+
+/*********************************
+**********************************
+            PROFIL
+**********************************
+*********************************/
+
+.medlemmar{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: inline-flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.profilbild img{
+    max-height: 150px;
+    max-width: 100%;
+    margin-right: 30px;
+}
+
+.profilinfo{
+    max-width: 500px;
+    height: 150px;
+    
+}
+
+.profilinfo a{
+display: inline-flex;
+    text-decoration: none;
+        color: black;
+    margin-left: 5px;
+}
+
+.profilinfo a:hover{
+    
+    color: black;
+        font-weight: bold;
+    text-decoration: underline;
+}
+
+.profilinfo a:visited{
+    
+    text-decoration: none;
+    font-weight: 0;
+    
+}
+
+/********************************
+********************************/
