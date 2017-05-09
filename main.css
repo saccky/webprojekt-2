@@ -381,9 +381,10 @@ hr {
 **********************************/
 @media only screen and (max-width: 600px) {
    
-    #search-field, #search-button {
+    .search{
         display: none;
     }
+    
     .container{
     flex-direction: column;
     
@@ -398,10 +399,7 @@ hr {
         display: none;
     }
     
-    #search{
-        
-        display: none;
-    }
+   
 
 }
 
@@ -436,7 +434,7 @@ max-width:  500px;
 }
 
 .item-2{
-    margin-top: 20px;
+    margin-top: 50px;
     max-width:  500px;
     height: 400px;
 }
@@ -465,9 +463,10 @@ max-width:  500px;
 *********************************/
 
 .medlemmar{
+   flex-direction: row;
     margin-top: 20px;
     margin-bottom: 20px;
-    display: inline-flex;
+    display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
 }
@@ -475,7 +474,6 @@ max-width:  500px;
 .profilbild img{
     max-height: 150px;
     max-width: 100%;
-    margin-right: 30px;
 }
 
 .profilinfo{
@@ -488,7 +486,7 @@ max-width:  500px;
 display: inline-flex;
     text-decoration: none;
         color: black;
-    margin-left: 5px;
+    /*margin-left: 5px;*/
 }
 
 .profilinfo a:hover{
