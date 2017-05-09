@@ -14,7 +14,7 @@
    </p>
         
     </div>
-    <br>
+    
     <div class="item-2 item">
         <h1>Länkar</h1>
         <a href="http://www.westerdals.no" target="_blank">Westerdals hjemmeside</a><br>
@@ -27,98 +27,8 @@
     </div>
     
 </div>
-  
-    <h1>Medlemmar</h1>
-    
-    
-     <div class="medlemmar">
         
-        <div class="profilbild"> 
-        <img src="Profilbilder/kenneth.jpg">
-        </div>
-        
-        <div class="profilinfo">
-        Namn: Kenneth Saccky
-        <br>
-        Email: <a href="mailto:kennethsaccky@gmail.com">kennethsaccky@gmail.com</a>  
-        <br>
-        Information: aslödmöalsmdölasm dlöamsdamsdämasldma klnvklnlkanflaksnfasfaslfknaklfna
-    </div>
     
-    </div>
-
-
-    <hr>
-    
-    <div class="medlemmar">
-        
-        <div class="profilbild"> 
-        <img src="Profilbilder/linda.jpg">
-        </div>
-        
-        <div class="profilinfo">
-        Namn: Linda
-        <br>
-        Email: <a href="mailto:kennethsaccky@gmail.com">kennethsaccky@gmail.com</a>  
-        <br>
-        Information: aslödmöalsmdölasm dlöamsdamsdämasldma klnvklnlkanflaksnfasfaslfknaklfna
-    </div>
-    
-    </div>
-    
-    <hr>
-    
-    <div class="medlemmar">
-        
-        <div class="profilbild"> 
-        <img src="Profilbilder/alexander.jpg">
-        </div>
-        
-        <div class="profilinfo">
-        Namn: Alexander
-        <br>
-        Email: <a href="mailto:kennethsaccky@gmail.com">kennethsaccky@gmail.com</a> 
-        <br>
-        Information: aslödmöalsmdölasm dlöamsdamsdämasldma klnvklnlkanflaksnfasfaslfknaklfna
-    </div>
-    
-    </div>
-    
-    <hr>
-    
-    <div class="medlemmar">
-        
-        <div class="profilbild"> 
-        <img src="Profilbilder/kenneth.jpg">
-        </div>
-        
-        <div class="profilinfo">
-        Namn: Margarethe
-        <br>
-        Email: <a href="mailto:kennethsaccky@gmail.com">kennethsaccky@gmail.com</a> 
-        <br>
-        Information: aslödmöalsmdölasm dlöamsdamsdämasldma klnvklnlkanflaksnfasfaslfknaklfna
-    </div>
-    
-    </div>
-    
-    <hr>
-    
-    <div class="medlemmar">
-        
-        <div class="profilbild"> 
-        <img src="Profilbilder/christopher.jpg">
-        </div>
-        
-        <div class="profilinfo">
-        Namn: Christopher
-        <br>
-Email:<a href="mailto:kennethsaccky@gmail.com">kennethsaccky@gmail.com</a>        <br>
-        Information: aslödmöalsmdölasm dlöamsdamsdämasldma klnvklnlkanflaksnfasfaslfknaklfna
-    </div>
-    
-    </div>
-
 </div>    
     
     
