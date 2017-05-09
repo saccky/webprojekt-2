@@ -76,7 +76,7 @@
                                     <li>seis</li>
                                 </ul>
                             </li>
-                            <li id="search">
+                            <li class="search">
                                 <!--- Søkefunksjon start --->
                                 <!--- Kan bare søke etter id og tags --->
                                 <form action="search-results.php" method="GET">
