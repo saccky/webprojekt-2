@@ -4,7 +4,7 @@
 ?>
 
 <div class="box">
-    <?php
+<?php
     //Henter brukernavn og passord fra login-feltene
     $user = $_GET['login-user'];
     $pass = $_GET['login-pass'];
@@ -13,7 +13,7 @@
     {
         //Logget inn koder
         echo "<h1>Velkommen, $user!</h1>"; //Viser bare navnet rett etter login..
-        ?>
+?>
         <form action="new-event.php" method="GET">
             <input type="submit" value="Ny hendelse">
         </form>
@@ -30,18 +30,19 @@
         <form action="user.php" method="GET">
             <input name="logout-button" type="submit" value="Logg ut">
         </form>  
-        <?php
+<?php
         if(isset($_GET['logout-button'])) //Sjekker om knapp med NAME "logout-button er trykket
         {
             session_destroy(); //Terminerer session
-            echo ''.$user.' logget ut! Vennligst oppdater siden'; //$user Virker ikke / konfirmasjon til bruker
-            header("Refresh:0"); 
-            header("location: user.php"); //Laster inn siden på nytt for å oppdatere endreingene
+            echo ''.$user.' logget ut!'; //$user Virker ikke / konfirmasjon til bruker
+            header("Refresh:0"); //Laster inn siden på nytt for å oppdatere endreingene
         }
     }
 
     if(!isset($_SESSION['use'])) //Hvis det ikke er en session i bruk, login
-    { ?>
+    { 
+?>
+
         <h1>Logg inn</h1>
         <!--- Login --->
         <!--- Merk: "Login" er brukt litt liberalt her, og passord kan være synlig i url, samt at det ikke er noen scrubbing av input-data. Med andre ord er det ingen sikkerhet i det hele tatt. --->
@@ -50,13 +51,13 @@
             <input id="login-pass" name="login-pass" type="password" placeholder="Passord"> <br>
             <input name="login-button" type="submit" value="Logg inn">
         </form>
-        <?php
+<?php
         if(isset($_GET['login-button'])) //Sjekker om knappen med NAME(ikke id) "login-button" er trykket
         {
             if($user == "Admin" && $pass == "1234") //Bruekrnavn/passord er Admin/1234
             {                                
                 $_SESSION['use'] = $user; //setter session til user(?)
-                echo ''.$user.' logget inn! Vennligst oppdater siden'; 
+                echo ''.$user.' logget inn!'; 
                 header("Refresh:0");
             }
             else //if($user != "Admin" || $pass != "1234") //Hvis ikke brukernavn og passord er korrekt, print feil
@@ -64,9 +65,9 @@
                 echo "Ugyldig brukernavn eller passord! <br> Er du sikker på at du skal være her?"; //Tegnproblemer
             }
         }
-    } ?>
+    }
+?>
 </div>
-
 <?php
     require 'footer.php';
 ?>

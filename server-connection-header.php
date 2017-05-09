@@ -3,7 +3,6 @@
 //Eksempelet viser bruker: garale16_admin, passord: GA16AdminPassord, og databasenavn garale16_westguide. Endre disse tre variablene til ditt brukernavn, passord og databasenavn.
 //OBS: ikke bruk personlig passord, lag nye
 
-$host = 'tek.westerdals.no'; //Host, localhost for MAMP, tek.westerdals.no for server
 $port = 3306; //Uendret
 $username = 'garale16_admin'; //Brukernavn i cPanel 
 $password = 'GA16AdminPassord'; //Passord for bruker i cPanel   

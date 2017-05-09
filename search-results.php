@@ -1,11 +1,8 @@
 <?php
     session_start();
     require 'connection-header.php';
-    
-    $eventcounter = 0; //Teller events printet
-    $articlecounter = 0; //Teller artikkler printet
-    $getsearch = $_GET['search'];
 
+    $getsearch = $_GET['search'];   
     $statement = $connection->prepare('SELECT * FROM events 
     WHERE id = "'.$getsearch.'" 
     OR event_title LIKE "%'.$getsearch.'%" 
@@ -20,8 +17,8 @@
     OR article_author LIKE "%'.$getsearch.'%" 
     ORDER BY id DESC');
     //order by body, date, link_name?
-
     require 'connection-footer.php';
+    //Merk: det ble vurdert hvorvidt det var vits å ha connection-footer.php, og om det skulle bli laget en connection-ooter2.php, men det viser seg at nesten alle sidene bruker connection-footer.php, og bare denne (sålangt) bruker en andre connection-footer.
     //"Connection-footer2" start
     $statement2->execute();
     $events2 = [];
@@ -30,39 +27,41 @@
         $events2[] = $row2;
     }
     require 'header.php';
-    ?>
+?>
+<div class="box">
+    <h1> Viser tag/id resultater for: <?= $getsearch ?> </h1>
 
-    <div class="box">
-        <h1> Viser tag/id resultater for: <?= $getsearch ?> </h1>
+    <br>
 
-        <?php
+<?php
+        echo "Artikler: <br>"; //Kan gjøres i HTML, bare husk ? > (uten mellomrom) for å lukke php tag, og < ?php for å starte igjen
         foreach ($events2 as $event) 
         {   
             require 'article.php';
-            echo "<br>";
-            $articlecounter++;
-        } 
-        if($articlecounter == 0)
+        }
+        /*
+        if($rows2 < 1) //Virker ikke :/
         {
-            echo "Beklager! Vi fant ingen artikkler med $getsearch!";
-        }?>
+            echo "Beklager, vi fant ingen artikler :/ <br>";
+        }
+        */
+?>
 
-        <br>
-        <hr>
+    <br>
+    <hr>
 
-        <?php
+<?php
+
+        echo "Hendelser: <br>";
         foreach ($events as $event) 
         {
             require 'event.php';
-            echo "<br>";
-            $eventcounter++;
-        } 
-        if($eventcounter == 0)
-        {
-            echo "Beklager! Vi fant ingen hendelser med $getsearch!";
-        }?>
-    </div>
-
-<?php
-    require 'footer.php';
 ?>
+            <br>
+<?php } ?>
+        
+</div>
+
+    <?php
+        require 'footer.php';
+    ?>
