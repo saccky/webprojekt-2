@@ -174,12 +174,12 @@ nav > ul > a:hover {
 
 #search-field
 {
-    width: 85.7px; 
+    max-width: 65.7px; 
     padding-left: 0;
     padding-right: 0;
 }
 
-#search:hover{
+.search:hover{
     
     background: #000;
 }
@@ -374,11 +374,13 @@ hr {
 }
 
 /********************************
-********************************/
-            MOBIL SKÄRM
+********************************
+        
+        MOBIL SKÄRM
 
-/*********************************
+*********************************
 **********************************/
+
 @media only screen and (max-width: 600px) {
    
     .search{
@@ -399,14 +401,15 @@ hr {
         display: none;
     }
     
-   
+    /*.item {
+        margin-top: 200px;
+    }*/
 
 }
 
 
 /********************************
 ********************************/
-
 
 
 
@@ -422,27 +425,33 @@ hr {
 
 .container{
     flex-direction: row;
-    display: flex;
+    display: inline-flex;
     flex-wrap: wrap;
     justify-content: space-between;
 
 }
 
 .item-1{
-max-width:  500px;
-    height: 400px;
+max-width: 500px;
+    height: auto;
+    margin-bottom: 0;
+    margin-right: 200px;
 }
 
+
+
 .item-2{
-    margin-top: 50px;
-    max-width:  500px;
-    height: 400px;
+    margin-top: 0;
+   max-width:  500px;
+    margin-bottom: 30px;
+    height: auto;
 }
 
 .item a{
     font-weight: bold;
     color: black;
- max-width:  500px;
+   max-width:  500px;
+    text-decoration: none;
 }
 
 .item a:hover{
@@ -466,7 +475,7 @@ max-width:  500px;
    flex-direction: row;
     margin-top: 20px;
     margin-bottom: 20px;
-    display: flex;
+    display: inline-flex;
     flex-wrap: nowrap;
     justify-content: space-between;
 }
@@ -479,8 +488,11 @@ max-width:  500px;
 .profilinfo{
     max-width: 500px;
     height: 150px;
+    margin-left: 20px;
     
 }
+
+
 
 .profilinfo a{
 display: inline-flex;

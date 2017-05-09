@@ -14,6 +14,7 @@
    </p>
       
     </div>
+    
 
     <div class="item-2 item">
         
@@ -39,9 +40,9 @@
         </div>
         
         <div class="profilinfo">
-        Namn: Kenneth Saccky
+       Kenneth Saccky
         <br>
-        Email: <a href="mailto:kennethsaccky@gmail.com">kennethsaccky@gmail.com</a>  
+        <a href="mailto:kennethsaccky@gmail.com">kennethsaccky@gmail.com</a>  
         <br>
         Information: aslödmöalsmdölasm dlöamsdamsdämasldma klnvklnlkanflaksnfasfaslfknaklfna
     </div>
@@ -58,9 +59,9 @@
         </div>
         
         <div class="profilinfo">
-        Namn: Linda
+        Linda
         <br>
-        Email: <a href="mailto:kennethsaccky@gmail.com">kennethsaccky@gmail.com</a>  
+       <a href="mailto:kennethsaccky@gmail.com">kennethsaccky@gmail.com</a>  
         <br>
         Information: aslödmöalsmdölasm dlöamsdamsdämasldma klnvklnlkanflaksnfasfaslfknaklfna
     </div>
@@ -76,9 +77,9 @@
         </div>
         
         <div class="profilinfo">
-        Namn: Alexander
+        Alexander
         <br>
-        Email: <a href="mailto:kennethsaccky@gmail.com">kennethsaccky@gmail.com</a> 
+        <a href="mailto:kennethsaccky@gmail.com">kennethsaccky@gmail.com</a> 
         <br>
         Information: aslödmöalsmdölasm dlöamsdamsdämasldma klnvklnlkanflaksnfasfaslfknaklfna
     </div>
@@ -94,9 +95,9 @@
         </div>
         
         <div class="profilinfo">
-        Namn: Margarethe
+        Margarethe
         <br>
-        Email: <a href="mailto:kennethsaccky@gmail.com">kennethsaccky@gmail.com</a> 
+        <a href="mailto:kennethsaccky@gmail.com">kennethsaccky@gmail.com</a> 
         <br>
         Information: aslödmöalsmdölasm dlöamsdamsdämasldma klnvklnlkanflaksnfasfaslfknaklfna
     </div>
@@ -110,11 +111,11 @@
         <div class="profilbild"> 
         <img src="Profilbilder/christopher.jpg">
         </div>
-        
+      
         <div class="profilinfo">
-        Namn: Christopher
+        Christopher
         <br>
-Email:<a href="mailto:kennethsaccky@gmail.com">kennethsaccky@gmail.com</a>        <br>
+            <a href="mailto:kennethsaccky@gmail.com">kennethsaccky@gmail.com</a>        <br>
         Information: aslödmöalsmdölasm dlöamsdamsdämasldma klnvklnlkanflaksnfasfaslfknaklfna
     </div>
     
