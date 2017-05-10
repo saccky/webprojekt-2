@@ -22,13 +22,8 @@
     //order by body, date, link_name?
 
     require 'connection-footer.php';
-    //"Connection-footer2" start
-    $statement2->execute();
-    $events2 = [];
-    while($row2 = $statement2->fetch(PDO::FETCH_ASSOC)) 
-    {
-        $events2[] = $row2;
-    }
+    require 'connection-footer-2.php';
+
     require 'header.php';
     ?>
 
