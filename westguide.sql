@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1:8889
--- Generation Time: May 10, 2017 at 09:41 AM
+-- Generation Time: May 10, 2017 at 09:59 AM
 -- Server version: 5.6.34-log
 -- PHP Version: 7.0.13
 
@@ -71,11 +71,11 @@ CREATE TABLE IF NOT EXISTS `authors` (
 --
 
 INSERT INTO `authors` (`id`, `author_name`, `author_picture`, `author_email`, `author_info`) VALUES
-(1, 'Kenneth', 'Profilbilder/kenneth.jpg', 'kennethsaccky@gmail.com', 'Info placeholder'),
-(2, 'Linda', 'Profilbilder/linda.jpg', NULL, 'Info placeholder'),
-(3, 'Alexander', 'Profilbilder/alexander.jpg', NULL, 'placeholder'),
+(1, 'Kenneth', 'profilbilder/kenneth.jpg', 'kennethsaccky@gmail.com', 'Info placeholder'),
+(2, 'Linda', 'profilbilder/linda.jpg', NULL, 'Info placeholder'),
+(3, 'Alexander', 'profilbilder/alexander.jpg', NULL, 'placeholder'),
 (4, 'Margarethe', NULL, NULL, 'placeholder'),
-(5, 'Christopher', 'Profilbilder/christopher.jpg', NULL, 'palceholder');
+(5, 'Christopher', 'profilbilder/christopher.jpg', NULL, 'palceholder');
 
 -- --------------------------------------------------------
 
