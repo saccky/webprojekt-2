@@ -1,6 +1,5 @@
 <?php
     require 'connection-header.php';
-    $matcounter = 0;
     // Kode for spesefik spørring etter events med tag "mat" (Ikke CAPS-sensetiv)
     $statement = $connection->prepare('SELECT * FROM events WHERE tag = "mat" ORDER BY id DESC LIMIT 10');
     require 'connection-footer.php';

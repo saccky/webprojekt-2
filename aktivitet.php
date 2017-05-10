@@ -1,6 +1,5 @@
 <?php
-    require 'connection-header.php';
-    $aktivitetcounter = 0;
+    require 'connection-header.php'; 
     // Kode for spesefik spørring etter events med tag "kultur" (Ikke CAPS-sensetiv)
     $statement = $connection->prepare('SELECT * FROM events WHERE tag = "aktivitet" ORDER BY id DESC LIMIT 10');
     require 'connection-footer.php';

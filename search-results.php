@@ -1,9 +1,6 @@
 <?php
     session_start();
     require 'connection-header.php';
-    
-    $eventcounter = 0; //Teller events printet
-    $articlecounter = 0; //Teller artikkler printet
     $getsearch = $_GET['search'];
 
     $statement = $connection->prepare('SELECT * FROM articles 
@@ -21,11 +18,11 @@
     ORDER BY ID DESC');
     //order by date, body?
 
-    $statement3 = $connection->prepare('SELECT * FROM authors
+    $statement3 = $connection->prepare('SELECT * FROM employees
     WHERE id = "'.$getsearch.'" 
-    OR author_name LIKE "%'.$getsearch.'%"  
-    OR author_email LIKE "%'.$getsearch.'%" 
-    OR author_info LIKE "%'.$getsearch.'%"');
+    OR employee_name LIKE "%'.$getsearch.'%"  
+    OR employee_email LIKE "%'.$getsearch.'%" 
+    OR employee_info LIKE "%'.$getsearch.'%"');
 
     require 'connection-footer.php';
     require 'connection-footer-2.php';
@@ -51,7 +48,7 @@
             echo "<br>";
             $articlecounter++;
         } 
-        if($articlecounter == 0)
+        if($articlecounter == 0) //teller antal artikler, hvis ingen funnet, print beklager..
         {
             echo "Beklager! Vi fant ingen artikkler med $getsearch!";
         }?>
@@ -77,13 +74,13 @@
         <?php
         foreach ($events3 as $event) 
         {
-            require 'author.php';
+            require 'employee.php';
             echo "<br>";
-            $authorcounter++;
+            $employeecounter++;
         } 
-        if($authorcounter == 0)
+        if($employeecounter == 0)
         {
-            echo "Beklager! Vi fant ingen forfattere med $getsearch!";
+            echo "Beklager! Vi fant ingen ansatte med $getsearch!";
         }?>
     </div>
 </div>

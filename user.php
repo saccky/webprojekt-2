@@ -1,7 +1,6 @@
 <?php
     session_start(); //Starter session
     require 'connection-header.php';
-    $employeecounter = 0;
     // Kode for spesefik spørring etter events med tag "Kultur" (Ikke CAPS-sensetiv)
     $statement = $connection->prepare('SELECT * FROM employees');
     require 'connection-footer.php';
