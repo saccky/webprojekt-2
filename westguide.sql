@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1:8889
--- Generation Time: Apr 30, 2017 at 05:24 PM
+-- Generation Time: May 10, 2017 at 09:41 AM
 -- Server version: 5.6.34-log
 -- PHP Version: 7.0.13
 
@@ -55,6 +55,31 @@ INSERT INTO `articles` (`id`, `article_title`, `article_datetime`, `article_body
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `authors`
+--
+
+CREATE TABLE IF NOT EXISTS `authors` (
+  `id` int(11) NOT NULL,
+  `author_name` varchar(255) NOT NULL,
+  `author_picture` text,
+  `author_email` text,
+  `author_info` text
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `authors`
+--
+
+INSERT INTO `authors` (`id`, `author_name`, `author_picture`, `author_email`, `author_info`) VALUES
+(1, 'Kenneth', 'Profilbilder/kenneth.jpg', 'kennethsaccky@gmail.com', 'Info placeholder'),
+(2, 'Linda', 'Profilbilder/linda.jpg', NULL, 'Info placeholder'),
+(3, 'Alexander', 'Profilbilder/alexander.jpg', NULL, 'placeholder'),
+(4, 'Margarethe', NULL, NULL, 'placeholder'),
+(5, 'Christopher', 'Profilbilder/christopher.jpg', NULL, 'palceholder');
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `events`
 --
 
@@ -90,6 +115,12 @@ ALTER TABLE `articles`
   ADD KEY `article-event-fk` (`article_event_fk`);
 
 --
+-- Indexes for table `authors`
+--
+ALTER TABLE `authors`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `events`
 --
 ALTER TABLE `events`
@@ -104,6 +135,11 @@ ALTER TABLE `events`
 --
 ALTER TABLE `articles`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=8;
+--
+-- AUTO_INCREMENT for table `authors`
+--
+ALTER TABLE `authors`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=6;
 --
 -- AUTO_INCREMENT for table `events`
 --
