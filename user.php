@@ -1,9 +1,9 @@
 <?php
     session_start(); //Starter session
     require 'connection-header.php';
-    $authorcounter = 0;
+    $employeecounter = 0;
     // Kode for spesefik spørring etter events med tag "Kultur" (Ikke CAPS-sensetiv)
-    $statement = $connection->prepare('SELECT * FROM authors');
+    $statement = $connection->prepare('SELECT * FROM employees');
     require 'connection-footer.php';
     require 'header.php';
 ?>
@@ -95,13 +95,13 @@
         <?php 
         foreach ($events as $event) 
         {  
-            require 'author.php';
+            require 'employee.php';
             echo "<hr>";
-            $authorcounter++;
+            $employeecounter++;
         }
-        if($authorcounter == 0)
+        if($employeecounter == 0)
         {
-            echo "Beklager! Vi fant ingen forfattere!";
+            echo "Beklager! Vi fant ingen ansatte!";
         } ?>
     </div>
 </div>
