@@ -394,7 +394,7 @@ hr {
         display: none;
     }
     
-    .container{
+   .container{
     flex-direction: column;
     
     }
@@ -408,10 +408,9 @@ hr {
         display: none;
     }
     
-    /*.item {
-        margin-top: 200px;
-    }*/
-
+   .item-1{
+    margin-right: 0;
+    }
 }
 
 
@@ -435,21 +434,22 @@ hr {
     display: inline-flex;
     flex-wrap: wrap;
     justify-content: space-between;
-
+    width: 100%;
 }
 
+
 .item-1{
-max-width: 500px;
+    max-width: 500px;
     height: auto;
     margin-bottom: 0;
-    margin-right: 200px;
+  /*  margin-right: 200px;*/
 }
 
 
 
 .item-2{
     margin-top: 0;
-   max-width:  500px;
+   max-width:  400px;
     margin-bottom: 30px;
     height: auto;
 }
