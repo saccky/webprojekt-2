@@ -338,33 +338,41 @@ hr {
             EVENTCARD
 **********************************
 *********************************/
-
-
-#EventWrapper {
-    width: 50%;
+.event-container {
+    width: 32%;
     height: 25%;
-    display: block;
 }
-
-#event-image {
-    top: 0;
+.event-inner-container {
+    padding: 0em 0.5em 1.0em 1.5em;
 }
-
+.event-shadow {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+}
+.event-image {
+    margin: auto;
+}
 .article-shadow {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
     border-radius: 5px;
 }
-    
 .article-container {
     padding: 0em 0.5em 1.0em 1.5em;   
 }
-
-.av{
+.av {
     color: black;
     display: inline-block;
 }
-
+.event-buttons, .article-buttons {
+    margin: auto;
+    bottom: 0;
+}
+.event-buttons *, .article-buttons * {
+    display: inline;
+    text-decoration: none;
+}
 .article-btn, .event-btn {
     background-color: black;
     color: white;
@@ -372,7 +380,6 @@ hr {
     border-radius: 0.3em;
     border: none;
 }
-
 /********************************
 *********************************
         
