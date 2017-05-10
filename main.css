@@ -335,7 +335,7 @@ hr {
 
 /*********************************
 **********************************
-            EVENTCARD
+            CARDS
 **********************************
 *********************************/
 .event-container {
@@ -365,15 +365,15 @@ hr {
     color: black;
     display: inline-block;
 }
-.event-buttons, .article-buttons {
+.event-buttons, .article-buttons, .author-buttons {
     margin: auto;
     bottom: 0;
 }
-.event-buttons *, .article-buttons * {
+.event-buttons *, .article-buttons *, .author-buttons * {
     display: inline;
     text-decoration: none;
 }
-.article-btn, .event-btn {
+.article-btn, .event-btn, .author-btn {
     background-color: black;
     color: white;
     padding: 1em;
@@ -387,34 +387,23 @@ hr {
 
 **********************************
 **********************************/
-
 @media only screen and (max-width: 600px) {
-   
-    .search{
+    .search {
         display: none;
     }
-    
-    .container{
-    flex-direction: column;
-    
+    .container {
+        flex-direction: column;
     }
-    
-    .profilinfo img{
-            
-            margin-right: 10px;
-        }
-    
-    #hidden-link{
+    .profilinfo img {    
+        margin-right: 10px;
+    }
+    #hidden-link {
         display: none;
-    }
-    
+    } 
     /*.item {
         margin-top: 200px;
     }*/
-
 }
-
-
 /********************************
 ********************************/
 
@@ -427,48 +416,35 @@ hr {
     PROJEKT INFORMATION + LÄNK
 **********************************
 *********************************/
-
-
-
-.container{
+.container {
     flex-direction: row;
     display: inline-flex;
     flex-wrap: wrap;
     justify-content: space-between;
 
 }
-
-.item-1{
+.item-1 {
 max-width: 500px;
     height: auto;
     margin-bottom: 0;
     margin-right: 200px;
 }
-
-
-
-.item-2{
+.item-2 {
     margin-top: 0;
-   max-width:  500px;
+    max-width:  500px;
     margin-bottom: 30px;
     height: auto;
 }
-
-.item a{
+.item a {
     font-weight: bold;
     color: black;
-   max-width:  500px;
+    max-width:  500px;
     text-decoration: none;
 }
-
-.item a:hover{
+.item a:hover {
     color: grey;
     text-decoration: underline;
-    
-    
-
 }
-
 /********************************
 ********************************/
 
@@ -481,8 +457,7 @@ max-width: 500px;
             PROFIL
 **********************************
 *********************************/
-
-.medlemmar{
+.medlemmar {
    flex-direction: row;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -490,41 +465,29 @@ max-width: 500px;
     flex-wrap: nowrap;
     justify-content: space-between;
 }
-
-.profilbild img{
+.profilbild img {
     max-height: 150px;
     max-width: 100%;
 }
-
-.profilinfo{
+.profilinfo {
     max-width: 500px;
     height: 150px;
     margin-left: 20px;
-    
 }
-
-
-
-.profilinfo a{
-display: inline-flex;
+.profilinfo a {
+    display: inline-flex;
     text-decoration: none;
-        color: black;
+    color: black;
     /*margin-left: 5px;*/
 }
-
-.profilinfo a:hover{
-    
+.rofilinfo a:hover {   
     color: black;
-        font-weight: bold;
+    font-weight: bold;
     text-decoration: underline;
 }
-
-.profilinfo a:visited{
-    
+.profilinfo a:visited {   
     text-decoration: none;
     font-weight: 0;
-    
 }
-
 /********************************
 ********************************/
