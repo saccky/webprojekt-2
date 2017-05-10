@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1:8889
--- Generation Time: May 10, 2017 at 09:59 AM
+-- Generation Time: May 10, 2017 at 05:39 PM
 -- Server version: 5.6.34-log
 -- PHP Version: 7.0.13
 
@@ -55,22 +55,22 @@ INSERT INTO `articles` (`id`, `article_title`, `article_datetime`, `article_body
 -- --------------------------------------------------------
 
 --
--- Table structure for table `authors`
+-- Table structure for table `employees`
 --
 
-CREATE TABLE IF NOT EXISTS `authors` (
+CREATE TABLE IF NOT EXISTS `employees` (
   `id` int(11) NOT NULL,
-  `author_name` varchar(255) NOT NULL,
-  `author_picture` text,
-  `author_email` text,
-  `author_info` text
+  `employee_name` varchar(255) NOT NULL,
+  `employee_picture` text,
+  `employee_email` text,
+  `employee_info` text
 ) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `authors`
+-- Dumping data for table `employees`
 --
 
-INSERT INTO `authors` (`id`, `author_name`, `author_picture`, `author_email`, `author_info`) VALUES
+INSERT INTO `employees` (`id`, `employee_name`, `employee_picture`, `employee_email`, `employee_info`) VALUES
 (1, 'Kenneth', 'profilbilder/kenneth.jpg', 'kennethsaccky@gmail.com', 'Info placeholder'),
 (2, 'Linda', 'profilbilder/linda.jpg', NULL, 'Info placeholder'),
 (3, 'Alexander', 'profilbilder/alexander.jpg', NULL, 'placeholder'),
@@ -92,7 +92,7 @@ CREATE TABLE IF NOT EXISTS `events` (
   `event_image_path` text,
   `event_body` text,
   `tag` enum('KULTUR','AKTIVITET','MAT','SKOLE') NOT NULL COMMENT 'MAT, KULTUR, AKTIVITET, SKOLE'
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `events`
@@ -115,9 +115,9 @@ ALTER TABLE `articles`
   ADD KEY `article-event-fk` (`article_event_fk`);
 
 --
--- Indexes for table `authors`
+-- Indexes for table `employees`
 --
-ALTER TABLE `authors`
+ALTER TABLE `employees`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -136,15 +136,15 @@ ALTER TABLE `events`
 ALTER TABLE `articles`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=8;
 --
--- AUTO_INCREMENT for table `authors`
+-- AUTO_INCREMENT for table `employees`
 --
-ALTER TABLE `authors`
+ALTER TABLE `employees`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=6;
 --
 -- AUTO_INCREMENT for table `events`
 --
 ALTER TABLE `events`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=5;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=4;
 --
 -- Constraints for dumped tables
 --
