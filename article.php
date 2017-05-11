@@ -37,7 +37,7 @@
                 </a>
                 <!--- Endreknapp --->
                 <a class="article-edit-class" href="edit-article.php?id=<?= $event['id'] ?>">
-                    <button class="article-btn" type="button"> Endre Artikkel (placeholder) </button>
+                    <button class="article-btn" type="button"> Endre Artikkel </button>
                 </a>
             <?php } ?>
         </div>
