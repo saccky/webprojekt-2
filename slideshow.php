@@ -37,6 +37,6 @@
                         
 </div>
 <div id="SlidesButtons">
-        <button class="SlidesBtnPrev" type="button" onclick="changeSlides(-1)"> Prev </button>     
-        <button class="SlidesBtnNext" type="button" onclick="changeSlides(1)"> Next </button>
+        <button class="SlidesBtnPrev" type="button" onclick="changeSlides(-1)"> &larr; </button>     
+        <button class="SlidesBtnNext" type="button" onclick="changeSlides(1)"> &rarr; </button>
 </div>
