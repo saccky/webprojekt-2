@@ -93,7 +93,7 @@
             </div>
         </div>
         
-        <h1>Medlemmar</h1>
+        <h1>Medlemmer</h1>
         <?php 
         foreach ($events as $event) 
         {  

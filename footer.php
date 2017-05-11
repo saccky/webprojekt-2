@@ -12,7 +12,7 @@
                         </div>
                         <div class="medlemsknapp">
                             
-                            <button class="btn" type="submit"><a href="user.php">Medlemmar</a></button>
+                            <button class="btn" type="submit"><a href="user.php">Medlemmer</a></button>
                         </div>
                     
                     </div>
