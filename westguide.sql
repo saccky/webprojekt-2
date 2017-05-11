@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1:8889
--- Generation Time: May 10, 2017 at 05:39 PM
+-- Generation Time: May 11, 2017 at 03:17 PM
 -- Server version: 5.6.34-log
 -- PHP Version: 7.0.13
 
@@ -92,16 +92,25 @@ CREATE TABLE IF NOT EXISTS `events` (
   `event_image_path` text,
   `event_body` text,
   `tag` enum('KULTUR','AKTIVITET','MAT','SKOLE') NOT NULL COMMENT 'MAT, KULTUR, AKTIVITET, SKOLE'
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `events`
 --
 
 INSERT INTO `events` (`id`, `event_title`, `event_where`, `event_datetime`, `event_where_link`, `event_image_path`, `event_body`, `tag`) VALUES
-(1, 'Åpent galleri på Vulkan', 'Westerdals på Vulkan', '2017-04-18 12:00:00', 'https://www.westerdals.no/artikkel/campus-vulkan/', 'Bilder-Skole/westerdals_bygning_01-1-ekempel.jpg', 'Åpen dag! Kom og se på kunst og andre ting.', 'KULTUR'),
-(2, 'Smaksprøver i Mathallen', 'Mathallen, Vulkan', '2017-04-30 15:00:00', 'https://mathallenoslo.no/', 'Bilder-Mat/Liv-og-røre-i-Mathallen-1500x750.jpg', 'Kom og smak mat fra verden over, nært og fjernt!', 'MAT'),
-(3, 'Åpen forelesning om Amerkansk media', 'Westerdals Fjerdingen', '2017-05-19 10:00:00', NULL, 'Bilder-Skole/fåredrag.jpg', 'Kom og hør Einstein snakke om amerikanske husholdninger of forhold til tv og lignende media.', 'AKTIVITET');
+(1, 'Åpent galleri på Vulkan', 'Westerdals, Vulkan', '2017-04-18 12:00:00', 'https://www.westerdals.no/artikkel/campus-vulkan/', 'Bilder-Kultur/Åpent-galleri.jpg', 'Kom og se på kjent kunst fra Westerdals historie. Igjennom tidene har det blitt skapt fantastiske ting her på Westerdals, og vi vil denne dagen sette dette på utstilling! Det er åpent hele dagen, bare å komme innom.\r\n\r\n', 'KULTUR'),
+(2, 'Smaksprøver i Mathallen', 'Mathallen, Vulkan', '2017-04-30 15:00:00', 'https://mathallenoslo.no/', 'Bilder-Mat/mathallen-redi.jpg', 'Kom og smak mat fra verden over, nært og fjernt! Kokkene ved mathallends mange resturanter til presentere et helt område fyllt med gode smaker fra verden over. Blant annet fra Frankrike, Roma og Italia. Kom og fyll magene deres! ', 'MAT'),
+(3, 'Åpen forelesning om Amerkansk media', 'Westerdals Fjerdingen', '2017-05-19 10:00:00', 'https://www.westerdals.no/?gclid=CjwKEAjwl9DIBRCG_e3DwsKsizsSJADMmJ11HIdS_zO_qyV5RdKlNMQcMj6rbZqKF_KI_dJ2lUPdShoCywzw_wcB', 'Bilder-Aktivitet/Einstein.jpg', 'Kom og hør Einstein snakke om amerikanske husholdninger i forhold til tv og lignende media. Dette er noe dere bare ikke kan gå glipp av.\r\n\r\nSenere vil det bli servering av enkle retter med drikke. Ved baren.', 'AKTIVITET'),
+(4, 'Alt av Kunst', 'Westerdals, Vulkan', '2017-05-30 09:00:00', 'https://www.westerdals.no/artikkel/campus-vulkan/', 'Bilder-Kultur/Kunst.jpg', 'Elevene ved Campus Vulkan inviterer til åpen dag, hvor de presenterer sine prosjekter som de har hatt utover året. Det blir alt fra moderne til klassisk kunst. Kostymer, diktverk og mye mer! \r\n\r\nBare å komme!', 'KULTUR'),
+(5, 'Historie vandring', 'Akerselven, Westerdals Brenneriveien og Vulkan', '2017-05-19 10:00:00', 'https://www.westerdals.no/artikkel/campus-vulkan/\r\n\r\nhttps://no.wikipedia.org/wiki/Akerselva', 'Bilder-Kultur/Akerselven-Guide.jpg', 'Hvis du noen gang har lurt på historien rundt Akerselven og områdene rundt, så er dette noe for deg. Vi inviterer til guidet tur rundt Akerselven. Vi kommer til å snakke om alt fra gammel kultur, og ny kultur. Vi vil også vise bilder av hvordan det så ut før, og hvorfor det ser ut som det gjør nå. \r\n\r\nBare å komme, det blir strålende vær.\r\n\r\nMøt opp utenfor Vulkan klokken 10.00 ', 'KULTUR'),
+(7, 'Omvisning og informasjon', 'Westerdals Fjerdingen, Vulkan og Brenneriveien', '2017-06-01 10:00:00', 'https://www.westerdals.no/', 'Bilder-Skole/foredrag.jpg', 'Vi inviterer til omvisning her på Vulkan og Fjerdingen. Dette er åpent for alle. Vi vil starte med å si litt om Westerdals historie, også gå over til å vise litt rundt. Vi starter først på Fjerdingen og beveger oss videre til Vulkan og Brenneriveien.\r\n\r\n Velkommen! Start 10.00 på Fjerdingen', 'SKOLE'),
+(8, 'Sunnere Dessert!', 'Mathallen, Vulkan', '2017-05-24 11:00:00', 'https://mathallenoslo.no/', 'Bilder-Mat/Sunn.jpg', 'Linda Myre inviterer til Sunnere Dessert kurs i Mathallen like ved Vulkan. Dette er et kurs åpent for alle!\r\n\r\nVi skal begynne med å lage muffins, sjokolade mousse, og jordbær kake med en sunnere vri! \r\n\r\nDette foregår i 2-etasje i Mathallen klokken 11.00. Det er godt skjiltet, når dere kommer inn!\r\n', 'MAT'),
+(9, 'Studere i utlandet?', 'Westerdals, Vulkan og Fjærdingen', '2017-05-19 12:00:00', 'https://www.westerdals.no/ta-et-semester-i-utlandet/', 'Bilder-Skole/Studere-utlandet.jpg', 'Vil du studere i utlandet? Vi kommer til å fortelle alt du trenger å vite angående dette området! Alt fra opphold til hvordan å komme seg dit. \r\n\r\nStudentene vil så holder foredrag om hvordan de har opplevd å være på utveksling til utlandet via Westerdals. \r\n\r\nSpørsmål vil bli besvart på slutten av foredraget.', 'SKOLE'),
+(10, 'BiffDay', 'Mathallen, Vulkan', '2017-06-02 12:00:00', 'https://mathallenoslo.no/', 'Bilder-Mat/Hellstrøm.jpg', 'Hellstrøm skal holde en såkalt BiffDag for alle som vil, i Mathallen 24.juni! Han skal live kokkelere og vise hvordan man lager den perfekte biffen.\r\n\r\nRå, medium eller stekt! Hva foretrekker du?\r\n\r\nDette begynner klokken 12.00', 'MAT'),
+(11, 'Student foredrag', 'Westerdals, Fjærdingen', '2017-05-12 13:00:00', 'https://www.westerdals.no/artikkel/campus-Fjerdingen/', 'Bilder-Skole/Student-foredrag.jpg', 'Studentene skal holde foredrag om hvordan det er å gå her på Westerdals. De skal begynne å fortelle om hvordan ting foregår her på Westerdals og litt om hvordan de triver her.\r\n\r\nEr miljøet bra? Blir de hørt? ble forventningene møtt da de begynte her? Dette er bra å få med seg hvis man er usikker på om man vil begynne her på westerdals. Dette er åpent for alle!', 'SKOLE'),
+(12, 'Kunstig Intelligens og fremtiden', 'Westerdals, Fjærdingen', '2017-05-30 12:00:00', 'https://www.westerdals.no/artikkel/campus-Fjerdingen/\r\n\r\nhttps://no.wikipedia.org/wiki/Kunstig_intelligens', 'Bilder-Aktivitet/kunstig-intelligens.jpg', 'Hovedlederen for Intelligente Systemer vil starte dagen med å holde et foredrag om kunstig teknologi og fremtiden! Og fortelle om at westerdals vil henge med i denne utviklingen.\r\n\r\nEtter dette vil det være stands der folk kan prøve alt fra VR, 3D printing til å se hologrammer. Dette blir gøy! fremtiden er her\r\n\r\n', 'AKTIVITET'),
+(13, 'Rock Night!', 'Westerdals, Fjærdingen', '2017-05-21 18:00:00', 'https://www.westerdals.no/artikkel/campus-Fjerdingen/', 'Bilder-Aktivitet/Rock''nRoll-Aktivitet.jpg', 'Studentene ved Musikklinjen ved Westerdals vil holde en minikonsert for alle over 18 år. De som skal spille er the Watchers, de gleder seg til å se deg!\r\n\r\nEtter dette vil det bli servering i baren med quiz. Dette blr kos!\r\n\r\nDette begynner klokken 18.00 i Fjerdingen', 'AKTIVITET');
 
 --
 -- Indexes for dumped tables
@@ -144,7 +153,7 @@ ALTER TABLE `employees`
 -- AUTO_INCREMENT for table `events`
 --
 ALTER TABLE `events`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=14;
 --
 -- Constraints for dumped tables
 --
