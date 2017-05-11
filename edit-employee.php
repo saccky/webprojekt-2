@@ -16,7 +16,7 @@
                     <form class="" action="update-employee.php" method="post">
                         <div class="">
                             <input class="" type="text" id="edit-name" name="edit-name" value="<?= $event['employee_name'] ?>">
-                            <label class="">Navn*</label>
+                            <label class="">Navn<font color="red">*</font></label>
                         </div>
                         <div class="">
                             <input class="" type="text" id="edit-picture" name="edit-picture" value="<?= $event['employee_picture'] ?>">

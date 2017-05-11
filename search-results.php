@@ -39,7 +39,7 @@
 
 <div class="wrap">
     <div class="box">
-        <h1> Viser tag/id resultater for: <?= $getsearch ?> </h1>
+        <h1> Viser resultater for <?= $getsearch ?> </h1>
 
         <?php
         foreach ($events as $event) 
