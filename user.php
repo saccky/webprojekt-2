@@ -23,8 +23,8 @@
                 <input type="submit" value="Ny hendelse">
             </form>
 
-            <form action="user.php" method="GET">
-                <input type="submit" value="Ny artikkel (placeholder)">
+            <form action="new-article.php" method="GET">
+                <input type="submit" value="Ny artikkel">
             </form>
 
             <form action="testside.php" method="GET">

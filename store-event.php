@@ -22,12 +22,3 @@
 
     header('Location: index.php');
     exit;
-
-    /*//Av en eller annen grunn krasher siden hvis man bruker disse variablene
-    $new-title = $_POST['new-title']; 
-    $new-where = $_POST['new-where'];
-    $new-where-link = $_POST['new-where-link'];
-    $new-image-path = $_POST['new-image-path'];
-    $new-body = $_POST['new-body'];
-    $new-tag = $_POST['new-tag'];
-    */
