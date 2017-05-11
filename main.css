@@ -212,7 +212,7 @@ height: auto;
 .medlemsknapp{
     height:auto;
     width: 200px;
-    margin-right: 100px;
+    margin-left: 100px;
 }
 
 .medlemsknapp button{
@@ -237,7 +237,7 @@ height: auto;
 .socialamedier{
 height:auto;
 width: 300px;
-margin-left: 50px;
+margin-right: 30px;    
 }
 
 .ikoner{
