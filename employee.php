@@ -29,11 +29,11 @@
         { ?>
             <!--- Sletteknapp --->
             <a class="employee-delete-class" href="delete-employee.php?id=<?= $event['id'] ?>">
-                <button class="employee-btn" type="button"> Fjern Ansatt (placeholder) </button>
+                <button class="employee-btn" type="button"> Fjern Ansatt </button>
             </a>
             <!--- Endreknapp --->
             <a class="employee-edit-class" href="edit-employee.php?id=<?= $event['id'] ?>">
-                <button class="employee-btn" type="button"> Endre Info (placeholder) </button>
+                <button class="employee-btn" type="button"> Endre Info </button>
             </a>
         <?php } ?>
     </div>

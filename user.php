@@ -19,12 +19,15 @@
             //Logget inn koder
             echo "<h1>Velkommen, $user!</h1>"; //Viser bare navnet rett etter login..
             ?>
-            <form action="new-event.php" method="GET">
-                <input type="submit" value="Ny hendelse">
-            </form>
 
             <form action="new-article.php" method="GET">
                 <input type="submit" value="Ny artikkel">
+            </form>
+            <form action="new-event.php" method="GET">
+                <input type="submit" value="Ny hendelse">
+            </form>
+            <form action="new-employee.php" method="GET">
+                <input type="submit" value="Ny ansatt">
             </form>
 
             <form action="testside.php" method="GET">

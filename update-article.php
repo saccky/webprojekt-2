@@ -4,7 +4,7 @@
 
     if(empty($_POST["edit-title"]) || empty($_POST["edit-body"]) || empty($_POST["edit-author"])) //Hvis tittel, body, eller forfatter ikke er fylt ut, send bruker tilbake
     {
-        header('Location: javascript://history.go(-1)');
+        header('Location: edit-article.php?id='.$articleid);
         exit;
     }
 
