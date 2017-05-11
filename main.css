@@ -199,16 +199,69 @@ nav > ul > a:hover {
 .main-footer {
     text-align: center;
     padding: 2em 0;
-    background-color: black;
+       background-color: black;
+    margin-top: 0;
+height: auto;
 }
+
+.footer{
+    display: flex;
+    justify-content: space-around;
+    margin-top:0;
+}
+.medlemsknapp{
+    height:auto;
+    width: 200px;
+    margin-right: 100px;
+}
+
+.medlemsknapp button{
+    margin-top: 0;
+    background-color: grey;
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+
+.medlemsknapp button a{
+    text-decoration: none;
+    color: white;
+}
+
+.socialamedier{
+height:auto;
+width: 300px;
+margin-left: 50px;
+}
+
+.ikoner{
+display: inline-flex;
+}
+
+.socialamedier h3{
+    margin-top: 0;
+
+    color: white;
+}
+
+
+
+
 #footertext{
     color: white;
+    text-align: center;
 }
 
 /** Gör att footern stannar i botten **/
 .wrap{
     
-    min-height: calc(100vh - 135px);
+    min-height: calc(100vh - 263.99px);
 }
 
 /********************************

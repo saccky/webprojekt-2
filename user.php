@@ -104,7 +104,7 @@
         } ?>
     </div>
 </div>
-
+<br>
 <?php
     require 'footer.php';
 ?>
