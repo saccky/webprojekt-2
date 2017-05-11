@@ -10,11 +10,16 @@
     <div class="box">
         <h1>MAT</h1>
         <?php 
-            foreach ($events as $event) 
-            {  
-                require 'event.php';
-                echo "<br>";
-            } ?>
+        foreach ($events as $event) 
+        {  
+            require 'event.php';
+            echo "<br>";
+            $matcounter++;
+        }
+        if($matcounter == 0)
+        {
+            echo "Beklager! Vi fant ingen hendelser!";
+        } ?>
     </div>
 </div>
 

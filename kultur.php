@@ -14,6 +14,11 @@
         {  
             require 'event.php';
             echo "<br>";
+            $kulturcounter++;
+        }
+        if($kulturcounter == 0)
+        {
+            echo "Beklager! Vi fant ingen hendelser!";
         } ?>
     </div>
 </div>

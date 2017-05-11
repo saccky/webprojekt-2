@@ -49,13 +49,11 @@
                 <input type="hidden" id="new-title" name="new-title" value="Test Tittel">
                 <input type="hidden" id="new-where" name="new-where" value="Test Hvor">
                 <input type="hidden" id="new-where-link" name="new-where-link" value="testside.php">
-                <input type="hidden" id="new-datetime" name="new-datetime" value="">
+                <input type="hidden" id="new-datetime" name="new-datetime" value="2017-01-01 00:00:00">
                 <input type="hidden" id="new-body" name="new-body" value="Test Body, fylt ut av Quickfill">
                 <input type="hidden" id="new-image-path" name="new-image-path" value="Bilder-Aktivitet/Einstein.jpg">
                 <input type="hidden" id="new-tag" name="new-tag" value="skole">
-                <button class="">
-                    Quickfill
-                </button>
+                <button class=""> Quickfill </button>
             </form>
         </div>
     </main>

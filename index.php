@@ -1,6 +1,7 @@
 <?php   
     session_start();
     require 'connection-header.php';
+    $articlecounter = 0;
     $statement = $connection->prepare('SELECT * FROM articles ORDER BY id DESC LIMIT 10');
     //Order by desc for å hente sist innlagte artikler først, kan evt. legge til og order by dato (kan også bruke carbon for ekstrapoeng)
     require 'connection-footer.php';
@@ -32,7 +33,12 @@
                 {
                     require 'article.php';
                     echo "<br>";
-                } ?>
+                    $articlecounter++;
+                    }
+                    if($articlecounter == 0)
+                    {
+                        echo "Beklager! Vi fant ingen artikler!";
+                    } ?>
             </article>
         </div>
     </div>
