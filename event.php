@@ -3,11 +3,10 @@
 ?>
 
 <!--- Event start --->
-<div class="event-container">
+<div class="event-card">
     <div class="event-shadow">
-        <div class="event-inner-container">
-            
-            <img class="event-image" width="300" height="200" src="<?= $event['event_image_path'] ?>">
+        <img class="event-image" src="<?= $event['event_image_path'] ?>">
+        <div class="event-container">
             <h2><?= $event['event_title'] ?></h2> 
             <a class="av" href="<?= $event['event_where_link'] ?>" target="_blank">
                 <?= $event['event_where'] ?>

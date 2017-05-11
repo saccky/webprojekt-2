@@ -338,11 +338,11 @@ hr {
             CARDS
 **********************************
 *********************************/
-.event-container {
+.event-card {
     width: 32%;
     height: 25%;
 }
-.event-inner-container {
+.event-container {
     padding: 0em 0.5em 1.0em 1.5em;
 }
 .event-shadow {
@@ -351,6 +351,7 @@ hr {
     border-radius: 5px;
 }
 .event-image {
+    width: 100%;
     margin: auto;
 }
 .article-shadow {
