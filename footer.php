@@ -5,9 +5,9 @@
                         <div class="socialamedier">
                             <h3>Du kan ogs&aring; finne oss p&aring;:</h3>
                             <div class="ikoner">
-                            <a href="http://facebook.com/"><img class="logoer" id="facelogo" src="./logoer/face.png"></a>
-                            <a href="http://twitter.com/"><img class="logoer" id="twitterlogo" src="./logoer/twitt.png"></a>
-                            <a href="http://instagram.com/"> <img class="logoer" id="instalogo" src="./logoer/insta.png"></a>
+                            <a href="https://www.facebook.com/westerdalsosloact/"><img class="logoer" id="facelogo" src="./logoer/face.png"></a>
+                            <a href="https://twitter.com/westerdalsact"><img class="logoer" id="twitterlogo" src="./logoer/twitt.png"></a>
+                            <a href="https://www.instagram.com/westerdalsact/"> <img class="logoer" id="instalogo" src="./logoer/insta.png"></a>
                                 </div>
                         </div>
                         <div class="medlemsknapp">
