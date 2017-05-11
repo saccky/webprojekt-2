@@ -35,45 +35,33 @@
                             <li>
                                 <a href="aktivitet.php">aktiviteter</a>
                                 <ul class="drop-menu menu-#{i}">
-                                    <li>uno</li>
-                                    <li>dos</li>
-                                    <li>tres</li>
-                                    <li>cuatro</li>
-                                    <li>cinco</li>
-                                    <li>seis</li>
+                                    <li>Museer</li>
+                                    <li>Parker</li>
+                                    <li>Barer</li>
                                 </ul>
                             </li>
                             <li>
                                 <a href="mat.php">mat</a>
                                 <ul class="drop-menu menu-#{i}">
-                                    <li>uno</li>
-                                    <li>dos</li>
-                                    <li>tres</li>
-                                    <li>cuatro</li>
-                                    <li>cinco</li>
-                                    <li>seis</li>
+                                    <li>Resturanter</li>
+                                    <li>Fast Food</li>
+                                    <li>Kaf&eacute;er</li>
                                 </ul>
                             </li>
                             <li>
                                 <a href="kultur.php">kultur</a>
                                 <ul class="drop-menu menu-#{i}">
-                                    <li>uno</li>
-                                    <li>dos</li>
-                                    <li>tres</li>
-                                    <li>cuatro</li>
-                                    <li>cinco</li>
-                                    <li>seis</li>
+                                    <li>Guider</li>
+                                    <li>Eventer</li>
+                                    <li>Severdigheter</li>
                                 </ul>
                             </li>
                             <li>
                                 <a href="skole.php">skole</a>
                                 <ul class="drop-menu menu-#{i}">
-                                    <li>uno</li>
-                                    <li>dos</li>
-                                    <li>tres</li>
-                                    <li>cuatro</li>
-                                    <li>cinco</li>
-                                    <li>seis</li>
+                                    <li>Fjerdingen</li>
+                                    <li>Vulkan</li>
+                                    <li>Auditorium</li>
                                 </ul>
                             </li>
                             <li class="search">
