@@ -391,32 +391,26 @@ hr {
     .search {
         display: none;
     }
-<<<<<<< HEAD
     
    .container{
     flex-direction: column;
-    
-=======
+    }
     .container {
         flex-direction: column;
->>>>>>> origin/master
     }
     .profilinfo img {    
         margin-right: 10px;
     }
-<<<<<<< HEAD
     
    .item-1{
     margin-right: 0;
     }
-=======
     #hidden-link {
         display: none;
     } 
     /*.item {
         margin-top: 200px;
     }*/
->>>>>>> origin/master
 }
 /********************************
 ********************************/
@@ -437,26 +431,23 @@ hr {
     justify-content: space-between;
     width: 100%;
 }
-<<<<<<< HEAD
+
 
 
 .item-1{
     max-width: 500px;
-=======
+    }
 .item-1 {
 max-width: 500px;
->>>>>>> origin/master
     height: auto;
     margin-bottom: 0;
   /*  margin-right: 200px;*/
 }
 .item-2 {
     margin-top: 0;
-<<<<<<< HEAD
    max-width:  400px;
-=======
+
     max-width:  500px;
->>>>>>> origin/master
     margin-bottom: 30px;
     height: auto;
 }
