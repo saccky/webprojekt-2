@@ -1,6 +1,8 @@
 <?php
     require 'connection-header.php';
     $articleid = $_POST['edit-article-id'];
+    date_default_timezone_set('Europe/Oslo'); //Setter tidssone
+    $date = date('Y-m-d H:i:s', time()); //Setter dato/tid til nå
 
     if(empty($_POST["edit-title"]) || empty($_POST["edit-body"]) || empty($_POST["edit-author"])) //Hvis tittel, body, eller forfatter ikke er fylt ut, send bruker tilbake
     {
@@ -11,6 +13,7 @@
     //id, article-title, article-datetime, article-body, article-image-path, article-author, article-author-link, article-link, article-link-name, article-event-fk
     $statement = $connection->prepare('UPDATE articles SET
     article_title = "'.$_POST['edit-title'].'",
+    article_datetime = "'.$date.'",
     article_body = "'.$_POST['edit-body'].'",
     article_image_path = "'.$_POST['edit-image-path'].'",
     article_author = "'.$_POST['edit-author'].'", 
