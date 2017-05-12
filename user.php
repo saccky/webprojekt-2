@@ -40,7 +40,8 @@ if(isset($_SESSION['use'])) //Hvis en session eksisterer, bruk den
         session_destroy(); //Terminerer session
         echo ''.$user.' logget ut! Vennligst oppdater siden'; //$user Virker ikke / konfirmasjon til bruker
         header("Refresh:0"); 
-        header("location: user.php"); //Laster inn siden på nytt for å oppdatere endreingene
+        header("Location: user.php"); //Laster inn siden på nytt for å oppdatere endreingene
+        exit(); //Headere virker på localhost, men ikke i server
     }
 }
 
@@ -60,8 +61,9 @@ if(!isset($_SESSION['use'])) //Hvis det ikke er en session i bruk, login
         if($user == "Admin" && $pass == "1234") //Bruekrnavn/passord er Admin/1234
         {                                
             $_SESSION['use'] = $user; //setter session til user(?)
-            echo ''.$user.' logget inn! Vennligst oppdater siden'; 
-            header("Refresh:0");
+            echo ''.$user.' logget inn! Vennligst oppdater siden';
+            header("Location: user.php"); //Laster inn siden på nytt for å oppdatere endreingene
+            exit();
         }
         else //if($user != "Admin" || $pass != "1234") //Hvis ikke brukernavn og passord er korrekt, print feil
         {
