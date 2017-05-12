@@ -6,23 +6,18 @@
     require 'header.php';
 ?>
 
-<div class="wrap">
-    <div class="box">
-        <h1>AKTIVITET</h1>
-        <?php 
-        foreach ($events as $event) 
-        {  
-            require 'event.php';
-            echo "<br>";
-            $aktivitetcounter++;
-        }
-        if($aktivitetcounter == 0)
-        {
-            echo "Beklager! Vi fant ingen hendelser!";
-        } ?>
-    </div>    
-</div>  
+<h1>AKTIVITET</h1>
+<?php 
+foreach ($events as $event) 
+{  
+    require 'event.php';
+    echo "<br>";
+    $aktivitetcounter++;
+}
+if($aktivitetcounter == 0)
+{
+    echo "Beklager! Vi fant ingen hendelser!";
+} 
 
-<?php
     require 'footer.php';
 ?>

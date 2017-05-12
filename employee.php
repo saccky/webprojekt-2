@@ -35,6 +35,8 @@
             <a class="employee-edit-class" href="edit-employee.php?id=<?= $event['id'] ?>">
                 <button class="employee-btn" type="button"> Endre Info </button>
             </a>
+            <!--- Viser id --->
+            <p>Ansatt ID: <?= $event['id'] ?></p>
         <?php } ?>
     </div>
 </div>

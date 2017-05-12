@@ -28,6 +28,8 @@
                     <a class="event-edit-class" href="edit-event.php?id=<?= $event['id'] ?>">
                         <button class="event-btn" type="button"> Endre Event </button>
                     </a>
+                    <!--- Viser id --->
+                    <p>Event ID: <?= $event['id'] ?></p>
                 <?php } ?>
             </div>    
         </div>

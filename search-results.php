@@ -37,54 +37,49 @@
     require 'header.php';
 ?>
 
-<div class="wrap">
-    <div class="box">
-        <h1> Viser resultater for <?= $getsearch ?> </h1>
-
-        <?php
-        foreach ($events as $event) 
-        {   
-            require 'article.php';
-            echo "<br>";
-            $articlecounter++;
-        } 
-        if($articlecounter == 0) //teller antal artikler, hvis ingen funnet, print beklager..
-        {
-            echo "Beklager! Vi fant ingen artikkler med $getsearch!";
-        }?>
-
-        <br>
-        <hr>
-
-        <?php
-        foreach ($events2 as $event) 
-        {
-            require 'event.php';
-            echo "<br>";
-            $eventcounter++;
-        } 
-        if($eventcounter == 0)
-        {
-            echo "Beklager! Vi fant ingen hendelser med $getsearch!";
-        }?>
-
-        <br>
-        <hr>
-
-        <?php
-        foreach ($events3 as $event) 
-        {
-            require 'employee.php';
-            echo "<br>";
-            $employeecounter++;
-        } 
-        if($employeecounter == 0)
-        {
-            echo "Beklager! Vi fant ingen ansatte med $getsearch!";
-        }?>
-    </div>
-</div>
+<h1> Viser resultater for <?= $getsearch ?> </h1>
 
 <?php
+foreach ($events as $event) 
+{   
+    require 'article.php';
+    echo "<br>";
+    $articlecounter++;
+} 
+if($articlecounter == 0) //teller antal artikler, hvis ingen funnet, print beklager..
+{
+    echo "Beklager! Vi fant ingen artikkler med $getsearch!";
+}?>
+
+<br>
+<hr>
+
+<?php
+foreach ($events2 as $event) 
+{
+    require 'event.php';
+    echo "<br>";
+    $eventcounter++;
+} 
+if($eventcounter == 0)
+{
+    echo "Beklager! Vi fant ingen hendelser med $getsearch!";
+}?>
+
+<br>
+<hr>
+
+<?php
+foreach ($events3 as $event) 
+{
+    require 'employee.php';
+    echo "<br>";
+    $employeecounter++;
+} 
+if($employeecounter == 0)
+{
+    echo "Beklager! Vi fant ingen ansatte med $getsearch!";
+}
+
     require 'footer.php';
 ?>

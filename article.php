@@ -39,6 +39,8 @@
                 <a class="article-edit-class" href="edit-article.php?id=<?= $event['id'] ?>">
                     <button class="article-btn" type="button"> Endre Artikkel </button>
                 </a>
+                <!--- Viser id --->
+                <p>Artikkel ID: <?= $event['id'] ?></p>
             <?php } ?>
         </div>
     </div>

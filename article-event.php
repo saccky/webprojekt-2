@@ -5,23 +5,16 @@
     require 'connection-footer.php';
     require 'connection-footer-2.php';
     require 'header.php';
-?>
 
-<div class="wrap">
-    <div class="box">
-        <?php
-        foreach ($events2 as $event) 
-        { ?>
-            <h1> Viser hendelser tilknyttet artikkel "<?= $event['article_title'] ?>" </h1>
-        <?php }
+foreach ($events2 as $event) 
+{ ?>
+    <h1> Viser hendelser tilknyttet artikkel "<?= $event['article_title'] ?>" </h1>
+<?php }
 
-        foreach ($events as $event) 
-        {
-            require 'event.php';
-        } ?>
-    </div>
-</div>
-
-<?php
+foreach ($events as $event) 
+{
+    require 'event.php';
+} 
+        
     require 'footer.php';
 ?>
