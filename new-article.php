@@ -3,16 +3,17 @@
 ?>
 
 <?= '<font color="red">Fyll ut alle felt market med en stjerne(*)</font><br>' ?>
+<?= 'OBS: Noe av koden virker kanskje ikke I IE9 og Safari<br>' ?>
 <main class="form-new">
     <div class="">
         <form class="" action="store-article.php" method="post">
             <div class="">
-                <input class="" type="text" id="new-title" name="new-title">
+                <input class="" type="text" id="new-title" name="new-title" required> <!--- Teste på IE9, safari --->
                 <label class="">Tittel<font color="red">*</font></label>
             </div>
             <!--- Datetime = null --->
             <div class="">
-                <textarea class="" type="text" rows= "10" id="new-body" name="new-body"></textarea>
+                <textarea class="" type="text" rows= "10" id="new-body" name="new-body" required></textarea>
                 <label class="" for="body">Body<font color="red">*</font></label>
             </div>
             <div class="">
@@ -20,7 +21,7 @@
                 <label class="">Bilde-URL</label>
             </div>
             <div class="">
-                <input class="" type="text" id="new-author" name="new-author">
+                <input class="" type="text" id="new-author" name="new-author" required>
                 <label class="">Forfatter<font color="red">*</font></label>
             </div>
             <div class="">
@@ -36,8 +37,8 @@
                 <label class="">Kildelink</label>
             </div>
             <div class="">
-                <input class="" type="text" id="new-event-link" name="new-event-link">
-                <label class="">Id på relevant event</label>
+                <input class="" type="number" id="new-event-link" name="new-event-link">
+                <label class="">Id paa relevant event OBS: Hvis dette feltet ikke fylles ut, blir det automatisk satt til 1 pga. problemer med kode</label>
             </div>
             <button class="">
                 Legg til artikkel

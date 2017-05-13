@@ -40,7 +40,7 @@ foreach ($events as $event) //Unødvendig, annen måte i hente verdier som blir 
                     <label class="">Kildelink</label>
                 </div>
                 <div class="">
-                    <input class="" type="text" id="edit-event-link" name="edit-event-link" value="<?= $event['article_event_fk'] ?>">
+                    <input class="" type="number" id="edit-event-link" name="edit-event-link" value="<?= $event['article_event_fk'] ?>">
                     <label class="">Id på relevant event</label>
                 </div>
                 <button class="">
