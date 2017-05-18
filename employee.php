@@ -1,5 +1,6 @@
 <?php
     session_start();
+    header('Content-Type: text/html; charset=ISO-8859-1');
 ?>
 
 <div class="medlemmar">
@@ -40,3 +41,6 @@
         <?php } ?>
     </div>
 </div>
+<?php
+    header('Content-type: text/html; charset=utf-8');
+?>

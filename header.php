@@ -1,5 +1,6 @@
 <?php
-    header('Content-Type: text/html; charset=ISO-8859-1'); //Spesialkarakterer i DB
+    //header('Content-Type: text/html; charset=ISO-8859-1'); //Spesialkarakterer i DB
+    //header('Content-type: text/html; charset=utf-8');
 ?>
 
 <!DOCTYPE html>
@@ -68,8 +69,8 @@
                             <!--- Søkefunksjon start --->
                             <!--- Kan bare søke etter id og tags --->
                             <form action="search-results.php" method="GET">
-                                <input id="search-field" name="search" type="text" placeholder="Sok etter...">
-                                <input id="search-button" type="submit" value="Sok">
+                                <input id="search-field" name="search" type="text" placeholder="Søk etter...">
+                                <input id="search-button" type="submit" value="Søk">
                             </form>
                         </li>
                     </ul>

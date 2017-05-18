@@ -1,5 +1,6 @@
 <?php
-   //session_start();
+    session_start();
+    header('Content-Type: text/html; charset=ISO-8859-1');
 ?>
 
 <!---Artikkel start --->
@@ -45,3 +46,6 @@
         </div>
     </div>
 </div>
+<?php
+    header('Content-type: text/html; charset=utf-8');
+?>

@@ -20,7 +20,7 @@
             </div>
             <div class="">
                 <input class="" type="datetime-local" rows= "10" id="new-datetime" name="new-datetime"> <!--- datetime-local virker ikke i firefox, eldre IE versjoner --->
-                <label class="">Naar<font color="red">*</font></label>
+                <label class="">Når<font color="red">*</font></label>
             </div>
             <div class="">
                 <textarea class="" type="text" rows= "10" id="new-body" name="new-body"></textarea>

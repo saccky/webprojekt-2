@@ -19,5 +19,5 @@
     "'.$_POST['new-tag'].'")');
     
     require 'connection-footer.php';
-    header('Location: index.php');
+    header('Location: '.$_POST['new-tag'].'.php');
     exit;

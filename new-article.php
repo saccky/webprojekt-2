@@ -38,7 +38,7 @@
             </div>
             <div class="">
                 <input class="" type="number" id="new-event-link" name="new-event-link">
-                <label class="">Id paa relevant event OBS: Hvis dette feltet ikke fylles ut, blir det automatisk satt til 1 pga. problemer med kode</label>
+                <label class="">Id på relevant event</label>
             </div>
             <button class="">
                 Legg til artikkel

@@ -20,5 +20,5 @@
     WHERE id = "'.$eventid.'"');
     
     require 'connection-footer.php';
-    header('Location: index.php');
+    header('Location: '.$_POST['edit-tag'].'.php');
     exit;

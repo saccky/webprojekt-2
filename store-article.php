@@ -12,7 +12,7 @@
     }
     if(empty($neweventlink))
     {
-        $neweventlink = 1; //Må være mellom 1 og max event id
+        $neweventlink = "NULL"; //Endrer artikkel/event FK til "NULL" hvis ingen verdi ble satt
     }
 
     //id, article-title, article-datetime, article-body, article-image-path, article-author, article-author-link, article-link, article-link-name, article-event-fk
@@ -26,7 +26,7 @@
     "'.$_POST['new-author-link'].'", 
     "'.$_POST['new-link'].'", 
     "'.$_POST['new-link-name'].'",
-    "'.$neweventlink.'")');
+    '.$neweventlink.')');
     
     require 'connection-footer.php';
     header('Location: index.php');
