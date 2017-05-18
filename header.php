@@ -1,8 +1,3 @@
-<?php
-    //header('Content-Type: text/html; charset=ISO-8859-1'); //Spesialkarakterer i DB
-    //header('Content-type: text/html; charset=utf-8');
-?>
-
 <!DOCTYPE html>
 <html>
 

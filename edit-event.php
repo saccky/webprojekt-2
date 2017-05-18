@@ -24,7 +24,7 @@ foreach ($events as $event) //Unødvendig, annen måte i hente verdier som blir 
                 </div>
                 <div class="">
                     <input class="" type="datetime" id="edit-datetime" name="edit-datetime" value="<?= $event['event_datetime'] ?>">
-                    <label class="">Naar<font color="red">*</font></label>
+                    <label class="">Når<font color="red">*</font></label>
                 </div>
                 <div class="">
                     <textarea class="" type="text" rows= "10" id="edit-body" name="edit-body">
