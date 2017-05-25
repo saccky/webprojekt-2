@@ -78,7 +78,9 @@ if(!isset($_SESSION['use'])) //Hvis det ikke er en session i bruk, login
     <div class="item-1 item">
         <h1>Kort om projektet</h1>
         <p> 
-            The opening of a streetwear giant such as Palace would naturally draw a line, but no one would expect the turn out to be so large on May 5, 2017. The shop, located at 49 Howard St. neatly between Stadium Goods and around the corner from NikeLab, was announced earlier with a teaser video and later confirmed with a solid address and store hours.Regardless of the torrential rain, hopeful shoppers stood in line and donned their latest pickups ranging from Supreme and Anti Social Social Club to BAPE and even Palace pieces from previous seasons and collections. 
+            WestGudie er et eksamensprosjekt laget av gruppe 32, som består av de "ansatte" under. Til høyre finner du diverse lenkte du kan følge prosjektet fremgang på, og vi håper du finner hva du trenger, og har en god srufe-opplevelse på siden! 
+            <br>
+            -Hilsen Gruppe 32
         </p>
     </div>
 
