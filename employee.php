@@ -13,10 +13,8 @@ header('Content-Type: text/html; charset=ISO-8859-1');
         <a href="mailto:<?= $event['employee_email'] ?>"><?= $event['employee_email'] ?></a>  
         <br>
         Information: <?= $event['employee_info'] ?>
-    </div>        
-    
-    <br><br><br>
-    <div class="employee-buttons">
+    <br><br>
+         <div class="employee-buttons">
         <?php
         //hvis fremmednøkkelen er true (ikke er null), legg til knapp
         if($event['']) //Linke til artikler skrevet av forfatter/ansatt"
@@ -40,6 +38,11 @@ header('Content-Type: text/html; charset=ISO-8859-1');
             <p>Ansatt ID: <?= $event['id'] ?></p>
         <?php } ?>
     </div>
+    
+    </div>        
+    
+    <br><br><br>
+   
 </div>
 <?php
 header('Content-type: text/html; charset=utf-8');
