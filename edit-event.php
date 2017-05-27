@@ -1,8 +1,8 @@
 <?php
-    require 'connection-header.php';
-    $statement = $connection->prepare('SELECT * FROM events WHERE id =' .$_GET['id']);
-    require 'connection-footer.php';
-    require 'header.php';
+require 'connection-header.php';
+$statement = $connection->prepare('SELECT * FROM events WHERE id =' .$_GET['id']);
+require 'connection-footer.php';
+require 'header.php';
 
 foreach ($events as $event) //Unødvendig, annen måte i hente verdier som blir endret til "$event" her?
 { 
@@ -55,5 +55,5 @@ foreach ($events as $event) //Unødvendig, annen måte i hente verdier som blir 
     </main>
 <?php }
 
-    require 'footer.php'; 
+require 'footer.php'; 
 ?>

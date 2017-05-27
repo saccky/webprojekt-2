@@ -1,6 +1,6 @@
 <?php
-    session_start(); //Starter session
-    require 'header.php'
+session_start(); //Starter session
+require 'header.php';
 ?>
       
 <h1>Testside</h1> Test ting her:
@@ -39,5 +39,5 @@
 <?php
 require 'twitterfeed.php';
 
-    require 'footer.php';
+require 'footer.php';
 ?>

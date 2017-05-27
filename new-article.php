@@ -1,5 +1,5 @@
 <?php 
-    require 'header.php';
+require 'header.php';
 ?>
 
 <?= '<font color="red">Fyll ut alle felt market med en stjerne(*)</font><br>' ?>
@@ -60,5 +60,5 @@
 </main>
 
 <?php 
-    require 'footer.php'; 
+require 'footer.php'; 
 ?>

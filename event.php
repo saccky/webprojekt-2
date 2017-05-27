@@ -1,6 +1,6 @@
 <?php
-    session_start();
-    header('Content-Type: text/html; charset=ISO-8859-1');
+session_start();
+header('Content-Type: text/html; charset=ISO-8859-1');
 ?>
 
 <!--- Event start --->
@@ -37,5 +37,5 @@
     </div>
 </div>
 <?php
-    header('Content-type: text/html; charset=utf-8');
+header('Content-type: text/html; charset=utf-8');
 ?>

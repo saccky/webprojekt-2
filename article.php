@@ -1,6 +1,6 @@
 <?php
-    session_start();
-    header('Content-Type: text/html; charset=ISO-8859-1');
+session_start(); //Starter session for artikkel
+header('Content-Type: text/html; charset=ISO-8859-1'); //Endrer charset så æ ø å kan vises som normalt
 ?>
 
 <!---Artikkel start --->
@@ -47,5 +47,5 @@
     </div>
 </div>
 <?php
-    header('Content-type: text/html; charset=utf-8');
+header('Content-type: text/html; charset=utf-8'); //Endrer charset tilbake så æ ø å virker på resten av siden
 ?>

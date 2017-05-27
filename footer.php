@@ -1,5 +1,5 @@
-                    </div>
-                </div>
+                    </div> <!--- Avslutter wrap div --->
+                </div> <!--- Avslutter box div --->
 
                 <footer class="main-footer">
                     <div class="footer">

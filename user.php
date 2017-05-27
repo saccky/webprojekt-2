@@ -1,10 +1,9 @@
 <?php
-    session_start(); //Starter session
-    require 'connection-header.php';
-    // Kode for spesefik spørring etter events med tag "Kultur" (Ikke CAPS-sensetiv)
-    $statement = $connection->prepare('SELECT * FROM employees');
-    require 'connection-footer.php';
-    require 'header.php';
+session_start(); //Starter session
+require 'connection-header.php';
+$statement = $connection->prepare('SELECT * FROM employees');
+require 'connection-footer.php';
+require 'header.php';
 
 //Henter brukernavn og passord fra login-feltene
 $user = $_GET['login-user'];
@@ -35,10 +34,10 @@ if(isset($_SESSION['use'])) //Hvis en session eksisterer, bruk den
         <input name="logout-button" type="submit" value="Logg ut">
     </form>  
     <?php
-    if(isset($_GET['logout-button'])) //Sjekker om knapp med NAME "logout-button er trykket
+    if(isset($_GET['logout-button'])) //Sjekker om "logout-button" er trykket
     {
         session_destroy(); //Terminerer session
-        echo ''.$user.' logget ut! Vennligst oppdater siden'; //$user Virker ikke / konfirmasjon til bruker
+        echo ''.$user.' logget ut! Vennligst oppdater siden'; //$user virker ikke helt / konfirmasjon til bruker
         header("Refresh:0"); 
         header("Location: user.php"); //Laster inn siden på nytt for å oppdatere endreingene
         exit(); //Headere virker på localhost, men ikke i server
@@ -106,5 +105,5 @@ if($employeecounter == 0)
     echo "Beklager! Vi fant ingen ansatte!<br>";
 } 
 
-    require 'footer.php';
+require 'footer.php';
 ?>
