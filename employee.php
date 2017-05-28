@@ -40,6 +40,11 @@ header('Content-Type: text/html; charset=ISO-8859-1');
             <p>Ansatt ID: <?= $event['id'] ?></p>
         <?php } ?>
     </div>
+    
+    </div>        
+    
+    <br><br><br>
+   
 </div>
 <?php
 header('Content-type: text/html; charset=utf-8');
