@@ -14,10 +14,9 @@ header('Content-Type: text/html; charset=ISO-8859-1');
             </a>,
             <?= $event['event_datetime'] ?>
             <div class="event-text">
-            
                 <?= $event['event_body'] ?>
-            
             </div>
+            
             <div class="event-buttons">
                 <?php
                 if(isset($_SESSION['use']))
@@ -37,6 +36,7 @@ header('Content-Type: text/html; charset=ISO-8859-1');
         </div>
     </div>
 </div>
+
 <?php
 header('Content-type: text/html; charset=utf-8');
 ?>

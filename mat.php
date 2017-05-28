@@ -8,18 +8,19 @@ require 'header.php';
 
 <h1>MAT</h1>
 <div class="event-wrapper">
-<?php 
-foreach ($events as $event) 
-{  
-    require 'event.php';
-    echo "<br>";
-    $matcounter++;
-}
-if($matcounter == 0)
-{
-    echo "Beklager! Vi fant ingen hendelser!";
-}
+    <?php 
+    foreach ($events as $event) 
+    {  
+        require 'event.php';
+        echo "<br>";
+        $matcounter++;
+    }
+    if($matcounter == 0)
+    {
+        echo "Beklager! Vi fant ingen hendelser!";
+    } ?>
+</div>
 
+<?php 
 require 'footer.php';
 ?>
-    </div>
