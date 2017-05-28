@@ -26,6 +26,7 @@ article_author = "'.$_POST['edit-author'].'",
 article_author_link = "'.$_POST['edit-author-link'].'", 
 article_link = "'.$_POST['edit-link'].'", 
 article_link_name = "'.$_POST['edit-link-name'].'",
+article_event_fk = '.$editeventlink.'
 WHERE id = "'.$articleid.'"');
 
 require 'connection-footer.php';
