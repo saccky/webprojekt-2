@@ -386,28 +386,41 @@ hr {
             CARDS
 **********************************
 *********************************/
+
+.event-wrapper {
+    flex-direction: row;
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+}
+
 .event-card {
     width: 32%;
     height: 25%;
 }
 .event-container {
     padding: 0em 0.5em 1.0em 1.5em;
+    height: auto;
+    width: auto;
 }
+
 .event-shadow {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
     border-radius: 5px;
-    width:300px;
+    width:250px;
+    max-height: 500px;
 }
 
 .event-image{
-    width:300px;
+    width:250px;
     height: 200px;
 }
 .event-image img{
   
     height: auto;
-    width: 300px;
+    width: auto;
     margin: auto;
 }
 .article-shadow {

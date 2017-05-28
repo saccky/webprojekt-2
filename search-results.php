@@ -54,6 +54,7 @@ if($articlecounter == 0) //teller antal artikler, hvis ingen funnet, print bekla
 <br>
 <hr>
 
+<div class="event-wrapper">
 <?php
 foreach ($events2 as $event) 
 {
@@ -65,7 +66,7 @@ if($eventcounter == 0)
 {
     echo "Beklager! Vi fant ingen hendelser med $getsearch!";
 }?>
-
+</div>
 <br>
 <hr>
 
