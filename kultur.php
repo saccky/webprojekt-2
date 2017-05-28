@@ -7,6 +7,7 @@ require 'header.php';
 ?>
     
 <h1>KULTUR</h1>
+<div class="event-wrapper">
 <?php 
 foreach ($events as $event) 
 {  
@@ -21,3 +22,4 @@ if($kulturcounter == 0)
 
 require 'footer.php';
 ?>
+    </div>

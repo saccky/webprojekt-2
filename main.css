@@ -397,23 +397,26 @@ hr {
 
 .event-card {
     width: 32%;
-    height: 25%;
 }
+
 .event-container {
     padding: 0em 0.5em 1.0em 1.5em;
     height: auto;
     width: auto;
+
 }
 
-
+.event-text{
+    font-size: 0.8em;
+}
 
 .event-shadow {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
     border-radius: 5px;
     width: 300px;
-    max-height: 500px;
     margin-bottom: 15px;
+    height 400px;
 }
 
 .event-image{
@@ -432,7 +435,7 @@ hr {
     border-radius: 5px;
 }
 .article-container {
-    padding: 0em 0.5em 1.0em 1.5em;   
+    padding: 0em 0.5em 1.0em 1.5em;
 }
 
 
@@ -490,6 +493,15 @@ hr {
     /*.item {
         margin-top: 200px;
     }*/
+    
+    .event-wrapper{
+        
+        flex-direction: column;
+    }
+    
+    .medlemmar{
+        flex-direction: column;
+    }
 }
 /********************************
 ********************************/
@@ -566,7 +578,7 @@ max-width: 500px;
 }
 .profilinfo {
     max-width: 500px;
-    height: 150px;
+    height: auto;
     margin-left: 20px;
 }
 .profilinfo a {
