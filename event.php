@@ -4,7 +4,6 @@ header('Content-Type: text/html; charset=ISO-8859-1');
 ?>
 
 <!--- Event start --->
-<div class="event-card">
     <div class="event-shadow">
         <img class="event-image" src="<?= $event['event_image_path'] ?>">
         <div class="event-container">
@@ -35,7 +34,7 @@ header('Content-Type: text/html; charset=ISO-8859-1');
             </div>    
         </div>
     </div>
-</div>
+
 <?php
 header('Content-type: text/html; charset=utf-8');
 ?>
