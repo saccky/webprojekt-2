@@ -14,8 +14,7 @@
 </head>
 
 <body>
-    <a href="user.php"><div id="hidden-link"></div></a>
-    <!---div id="wrapper"--->
+    <!--- a href="user.php"><div id="hidden-link"></div></a --->
         <header class="main-header">
             <h1 class="name"><a href="index.php">WestGuide</a></h1>
             <!---  <a href="index.php">
@@ -25,7 +24,6 @@
                 <nav>
                     <ul>
                         <li>
-                            <!---a href="index.php">hjem</a---> <!--- Må linkes til siden, men å legge linken rundt teksten gjør bare teksten klikkbar, og å legge lingen rundt <li> ødelegger layout --->
                             <a href="index.php">hjem</a>
                         </li>
                         <li>
@@ -62,7 +60,6 @@
                         </li>
                         <li class="search">
                             <!--- Søkefunksjon start --->
-                            <!--- Kan bare søke etter id og tags --->
                             <form action="search-results.php" method="GET">
                                 <input id="search-field" name="search" type="text" placeholder="Søk etter...">
                                 <input id="search-button" type="submit" value="Søk">
