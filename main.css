@@ -394,11 +394,13 @@ hr {
     justify-content: space-between;
     width: 100%;
 }
-
-.event-card {
-    width: 32%;
+.event-box{
+   width: 100%;
 }
-
+.event-card {
+    width: 25%;
+    margin-right: 10px;
+}
 .event-container {
     padding: 0em 0.5em 1.0em 1.5em;
     height: auto;
