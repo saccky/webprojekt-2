@@ -18,7 +18,6 @@ header('Content-Type: text/html; charset=ISO-8859-1'); //Endrer charset så æ �
         <p>
             <?= $event['article_body'] ?>
         </p>
-        <!--nkjn --></--nkjn>
         
         <br><br><br>
         <div class="article-buttons">
