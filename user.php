@@ -55,6 +55,7 @@ if(!isset($_SESSION['use'])) //Hvis det ikke er en session i bruk, login
         <input name="login-button" type="submit" value="Logg inn">
     </form>
     <?php
+    
     if(isset($_GET['login-button'])) //Sjekker om knappen med NAME(ikke id) "login-button" er trykket
     {
         if($user == "Admin" && $pass == "1234") //Bruekrnavn/passord er Admin/1234
