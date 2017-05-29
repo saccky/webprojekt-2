@@ -30,4 +30,6 @@ VALUES (NULL,
 
 require 'connection-footer.php';
 header('Location: index.php');
+
+
 exit;
